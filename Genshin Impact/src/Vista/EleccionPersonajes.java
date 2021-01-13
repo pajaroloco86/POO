@@ -5,6 +5,16 @@
  */
 package Vista;
 
+import Clases.Personaje;
+import Controlador.Iniciador;
+import java.awt.image.BufferedImage;
+import java.io.IOException;
+import java.net.URL;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.imageio.ImageIO;
+import javax.swing.ImageIcon;
+
 /**
  *
  * @author José Fernando Chan
@@ -36,6 +46,58 @@ public class EleccionPersonajes extends javax.swing.JFrame {
     JBpersonaje4.setOpaque(false);
     JBpersonaje4.setContentAreaFilled(false);
     JBpersonaje4.setBorderPainted(false);
+    }
+    
+    //Sobreescribimos el metodo repaint para que carge los avatares
+    public void repaint(){
+        cargaIconos();
+    }
+    
+    //Metodo que carga los iconos de los personajes de ser necesario
+    public void cargaIconos(){
+        //Ruta predefinida para todos los avatares
+        String defaultPath = "/Imagenes/Avatares/";
+        //Variable que sirve para generar la ruta completa para los avatares
+        URL url;
+        //Variable que carga la imagen
+        BufferedImage img;
+        
+        try {
+            //Creamos la ruta completa de la imagen
+            url = EleccionPersonajes.class.getResource(defaultPath+Iniciador.equipo[0].getNombre()+".png");
+            //Cargamos la imagen
+            img = ImageIO.read(url);
+            //Enviamos como un icono
+            JBpersonaje1.setIcon(new ImageIcon(img));
+            
+
+            /**
+             * Agregar cuando se sepa como emplearlo con el "equipo" vacio en cualquier posicion
+            //Creamos la ruta completa de la imagen
+            url = EleccionPersonajes.class.getResource(defaultPath+Iniciador.equipo[1].getNombre()+".png");
+            //Cargamos la imagen
+            img = ImageIO.read(url);
+            //Enviamos como un icono
+            JBpersonaje2.setIcon(new ImageIcon(img));
+            
+            //Creamos la ruta completa de la imagen
+            url = EleccionPersonajes.class.getResource(defaultPath+Iniciador.equipo[2].getNombre()+".png");
+            //Cargamos la imagen
+            img = ImageIO.read(url);
+            //Enviamos como un icono
+            JBpersonaje3.setIcon(new ImageIcon(img));
+            
+            //Creamos la ruta completa de la imagen
+            url = EleccionPersonajes.class.getResource(defaultPath+Iniciador.equipo[3].getNombre()+".png");
+            //Cargamos la imagen
+            img = ImageIO.read(url);
+            //Enviamos como un icono
+            JBpersonaje4.setIcon(new ImageIcon(img));
+            * **/
+        } catch (IOException ex) {
+            //Se lanza si no se encontro la ruta del archivo
+        }
+
     }
     
 
@@ -88,11 +150,6 @@ public class EleccionPersonajes extends javax.swing.JFrame {
                 JBpersonaje2MouseClicked(evt);
             }
         });
-        JBpersonaje2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                JBpersonaje2ActionPerformed(evt);
-            }
-        });
 
         JBpersonaje3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imágenes/Agregar-personaje.png"))); // NOI18N
         JBpersonaje3.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -100,21 +157,11 @@ public class EleccionPersonajes extends javax.swing.JFrame {
                 JBpersonaje3MouseClicked(evt);
             }
         });
-        JBpersonaje3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                JBpersonaje3ActionPerformed(evt);
-            }
-        });
 
         JBpersonaje4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imágenes/Agregar-personaje.png"))); // NOI18N
         JBpersonaje4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 JBpersonaje4MouseClicked(evt);
-            }
-        });
-        JBpersonaje4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                JBpersonaje4ActionPerformed(evt);
             }
         });
 
@@ -170,21 +217,9 @@ public class EleccionPersonajes extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void JBpersonaje2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBpersonaje2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_JBpersonaje2ActionPerformed
-
-    private void JBpersonaje3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBpersonaje3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_JBpersonaje3ActionPerformed
-
-    private void JBpersonaje4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBpersonaje4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_JBpersonaje4ActionPerformed
-
     private void JBpersonaje1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JBpersonaje1MouseClicked
         // TODO add your handling code here:
-        ListaPersonajes FRMListaPersonajes = new ListaPersonajes(1, this);
+        ListaPersonajes FRMListaPersonajes = new ListaPersonajes(0, this);
         FRMListaPersonajes.setVisible(true);
     }//GEN-LAST:event_JBpersonaje1MouseClicked
 
@@ -193,19 +228,19 @@ public class EleccionPersonajes extends javax.swing.JFrame {
     }//GEN-LAST:event_jBPer2ActionPerformed
 
     private void JBpersonaje2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JBpersonaje2MouseClicked
-        ListaPersonajes FRMLista = new ListaPersonajes(2, this);
+        ListaPersonajes FRMLista = new ListaPersonajes(1, this);
         FRMLista.setVisible(true);
     }//GEN-LAST:event_JBpersonaje2MouseClicked
 
     private void JBpersonaje3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JBpersonaje3MouseClicked
         // TODO add your handling code here:
-        ListaPersonajes FRMListaPersonajes = new ListaPersonajes(3, this);
+        ListaPersonajes FRMListaPersonajes = new ListaPersonajes(2, this);
         FRMListaPersonajes.setVisible(true);
     }//GEN-LAST:event_JBpersonaje3MouseClicked
 
     private void JBpersonaje4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JBpersonaje4MouseClicked
         // TODO add your handling code here:
-        ListaPersonajes FRMListaPersonajes = new ListaPersonajes(4, this);
+        ListaPersonajes FRMListaPersonajes = new ListaPersonajes(3, this);
         FRMListaPersonajes.setVisible(true);
     }//GEN-LAST:event_JBpersonaje4MouseClicked
 
