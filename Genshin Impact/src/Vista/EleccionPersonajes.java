@@ -184,7 +184,7 @@ public class EleccionPersonajes extends javax.swing.JFrame {
 
     private void JBpersonaje1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JBpersonaje1MouseClicked
         // TODO add your handling code here:
-        ListaPersonajes FRMListaPersonajes = new ListaPersonajes();
+        ListaPersonajes FRMListaPersonajes = new ListaPersonajes(1, this);
         FRMListaPersonajes.setVisible(true);
     }//GEN-LAST:event_JBpersonaje1MouseClicked
 
@@ -193,19 +193,19 @@ public class EleccionPersonajes extends javax.swing.JFrame {
     }//GEN-LAST:event_jBPer2ActionPerformed
 
     private void JBpersonaje2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JBpersonaje2MouseClicked
-        ListaPersonajes FRMLista = new ListaPersonajes();
+        ListaPersonajes FRMLista = new ListaPersonajes(2, this);
         FRMLista.setVisible(true);
     }//GEN-LAST:event_JBpersonaje2MouseClicked
 
     private void JBpersonaje3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JBpersonaje3MouseClicked
         // TODO add your handling code here:
-        ListaPersonajes FRMListaPersonajes = new ListaPersonajes();
+        ListaPersonajes FRMListaPersonajes = new ListaPersonajes(3, this);
         FRMListaPersonajes.setVisible(true);
     }//GEN-LAST:event_JBpersonaje3MouseClicked
 
     private void JBpersonaje4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JBpersonaje4MouseClicked
         // TODO add your handling code here:
-        ListaPersonajes FRMListaPersonajes = new ListaPersonajes();
+        ListaPersonajes FRMListaPersonajes = new ListaPersonajes(4, this);
         FRMListaPersonajes.setVisible(true);
     }//GEN-LAST:event_JBpersonaje4MouseClicked
 

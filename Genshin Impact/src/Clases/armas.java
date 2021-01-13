@@ -10,14 +10,17 @@ public class armas{
     private String nombreArma;
     private String materialMejora;
 
+    //Constructor
     public armas(String nombreArma, String materialMejora) {
         this.nombreArma = nombreArma;
         this.materialMejora = materialMejora;
     }
 
+    //Constructor sin parametros, usado para crear objetos de tipo "Personaje"
     public armas(){
     }
 
+    //Metodos set y get
     public String getNombreArma() {
         return nombreArma;
     }

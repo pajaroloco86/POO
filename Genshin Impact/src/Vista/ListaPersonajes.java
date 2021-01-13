@@ -14,11 +14,14 @@ public class ListaPersonajes extends javax.swing.JFrame {
     /**
      * Creates new form ListaPersonajes
      */
-    private EleccionPersonajes EleccionPersonajesFrame;
+    private int posicionPersonaje;
+    private EleccionPersonajes FRMEleccionPersonajes;
     
-    public ListaPersonajes() {
+    public ListaPersonajes(int posicionPersonaje, EleccionPersonajes FRMEleccionPersonajes) {
         initComponents();
         botonesTransparentes();
+        this.posicionPersonaje = posicionPersonaje;
+        this.FRMEleccionPersonajes = FRMEleccionPersonajes;
     }
     
     //Metodo para botones transparentes
@@ -100,6 +103,11 @@ public class ListaPersonajes extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         JBBarbara.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imágenes/Avatares/Barbara-Icon.png"))); // NOI18N
+        JBBarbara.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JBBarbaraMouseClicked(evt);
+            }
+        });
         JBBarbara.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 JBBarbaraActionPerformed(evt);
@@ -180,6 +188,11 @@ public class ListaPersonajes extends javax.swing.JFrame {
     private void JBBarbaraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBBarbaraActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_JBBarbaraActionPerformed
+
+    private void JBBarbaraMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JBBarbaraMouseClicked
+        // TODO add your handling code here:
+        FRMEleccionPersonajes.repaint();
+    }//GEN-LAST:event_JBBarbaraMouseClicked
 
     /**
      * @param args the command line arguments

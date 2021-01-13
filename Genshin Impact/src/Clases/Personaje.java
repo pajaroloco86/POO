@@ -11,18 +11,14 @@ public class Personaje {
     private armas arma;
     private String materialMejoraTalentos;
 
+    //Constructor
     public Personaje(String nombre, armas arma,String materialMejoraTalentos ) {
         this.nombre = nombre;
         this.arma = arma;
         this.materialMejoraTalentos = materialMejoraTalentos;
     }
 
-    @Override
-    public String toString() {
-        // TODO Auto-generated method stub
-        return "Nombre:" + getNombre() + " Tipo de Arma" + getArma().getClass()+ " Nombre arma:"+ arma.getNombreArma();
-    }
-
+//Metodos set y get
     public String getNombre() {
         return nombre;
     }
