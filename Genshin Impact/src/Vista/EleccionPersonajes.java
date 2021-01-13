@@ -215,7 +215,7 @@ public class EleccionPersonajes extends javax.swing.JFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public static javax.swing.JButton JBpersonaje1;
+    private javax.swing.JButton JBpersonaje1;
     private javax.swing.JButton JBpersonaje2;
     private javax.swing.JButton JBpersonaje3;
     private javax.swing.JButton JBpersonaje4;

@@ -11,12 +11,15 @@ package Vista;
  */
 public class ListaPersonajes extends javax.swing.JFrame {
 
-    /**
-     * Creates new form ListaPersonajes
-     */
+    
+    //Variable que sirve para saber en que posición se debe agregar al personaje
     private int posicionPersonaje;
+    
+    //Variable para actualizar el frame de "EleccionPersonajes"
     private EleccionPersonajes FRMEleccionPersonajes;
     
+    
+    //Se modifico el codigo para que requiera como parametros la posicionPersonaje y FRMEleccionPersonajes
     public ListaPersonajes(int posicionPersonaje, EleccionPersonajes FRMEleccionPersonajes) {
         initComponents();
         botonesTransparentes();
