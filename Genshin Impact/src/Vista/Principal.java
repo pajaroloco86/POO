@@ -32,10 +32,11 @@ public class Principal extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jlabel2 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        btSiguiente1 = new javax.swing.JToggleButton();
+        JBsiguiente = new javax.swing.JToggleButton();
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -54,32 +55,37 @@ public class Principal extends javax.swing.JFrame {
         jLabel4.setText("automática");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 160, -1, 50));
 
-        btSiguiente1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        btSiguiente1.setText("Siguiente");
-        btSiguiente1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btSiguiente1ActionPerformed(evt);
+        JBsiguiente.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        JBsiguiente.setText("Siguiente");
+        JBsiguiente.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JBsiguienteMouseClicked(evt);
             }
         });
-        getContentPane().add(btSiguiente1, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 370, 100, 50));
+        JBsiguiente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBsiguienteActionPerformed(evt);
+            }
+        });
+        getContentPane().add(JBsiguiente, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 370, 100, 50));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imágenes/genshin.jpg"))); // NOI18N
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 870, 480));
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btSiguiente1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btSiguiente1ActionPerformed
+    private void JBsiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBsiguienteActionPerformed
         // TODO add your handling code here:
-        
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new EleccionPersonajes().setVisible(true);
-            }
-        });
-        
-        
-    }//GEN-LAST:event_btSiguiente1ActionPerformed
+    }//GEN-LAST:event_JBsiguienteActionPerformed
+
+    private void JBsiguienteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JBsiguienteMouseClicked
+        // TODO add your handling code here:
+        EleccionPersonajes FRMEleccion = new EleccionPersonajes();
+        FRMEleccion.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_JBsiguienteMouseClicked
 
     /**
      * @param args the command line arguments
@@ -117,7 +123,7 @@ public class Principal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JToggleButton btSiguiente1;
+    private javax.swing.JToggleButton JBsiguiente;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
