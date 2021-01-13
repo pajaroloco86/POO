@@ -70,9 +70,6 @@ public class EleccionPersonajes extends javax.swing.JFrame {
             //Enviamos como un icono
             JBpersonaje1.setIcon(new ImageIcon(img));
             
-
-            /**
-             * Agregar cuando se sepa como emplearlo con el "equipo" vacio en cualquier posicion
             //Creamos la ruta completa de la imagen
             url = EleccionPersonajes.class.getResource(defaultPath+Iniciador.equipo[1].getNombre()+".png");
             //Cargamos la imagen
@@ -93,7 +90,6 @@ public class EleccionPersonajes extends javax.swing.JFrame {
             img = ImageIO.read(url);
             //Enviamos como un icono
             JBpersonaje4.setIcon(new ImageIcon(img));
-            * **/
         } catch (IOException ex) {
             //Se lanza si no se encontro la ruta del archivo
         }
@@ -126,13 +122,15 @@ public class EleccionPersonajes extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLtitulo.setFont(new java.awt.Font("Sitka Text", 1, 24)); // NOI18N
         jLtitulo.setForeground(new java.awt.Color(0, 0, 0));
         jLtitulo.setText("Elección personajes y armas");
+        getContentPane().add(jLtitulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 20, -1, -1));
 
         JBpersonaje1.setBackground(new java.awt.Color(0, 0, 0));
-        JBpersonaje1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imágenes/Agregar-personaje.png"))); // NOI18N
+        JBpersonaje1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Avatares/Agregar.png"))); // NOI18N
         JBpersonaje1.setMaximumSize(new java.awt.Dimension(140, 140));
         JBpersonaje1.setMinimumSize(new java.awt.Dimension(140, 140));
         JBpersonaje1.setPreferredSize(new java.awt.Dimension(140, 140));
@@ -141,8 +139,9 @@ public class EleccionPersonajes extends javax.swing.JFrame {
                 JBpersonaje1MouseClicked(evt);
             }
         });
+        getContentPane().add(JBpersonaje1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 150, -1, -1));
 
-        JBpersonaje2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imágenes/Agregar-personaje.png"))); // NOI18N
+        JBpersonaje2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Avatares/Agregar.png"))); // NOI18N
         JBpersonaje2.setMaximumSize(new java.awt.Dimension(140, 140));
         JBpersonaje2.setMinimumSize(new java.awt.Dimension(140, 140));
         JBpersonaje2.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -150,68 +149,27 @@ public class EleccionPersonajes extends javax.swing.JFrame {
                 JBpersonaje2MouseClicked(evt);
             }
         });
+        getContentPane().add(JBpersonaje2, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 150, -1, 140));
 
-        JBpersonaje3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imágenes/Agregar-personaje.png"))); // NOI18N
+        JBpersonaje3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Avatares/Agregar.png"))); // NOI18N
         JBpersonaje3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 JBpersonaje3MouseClicked(evt);
             }
         });
+        getContentPane().add(JBpersonaje3, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 150, -1, 140));
 
-        JBpersonaje4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imágenes/Agregar-personaje.png"))); // NOI18N
+        JBpersonaje4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Avatares/Agregar.png"))); // NOI18N
         JBpersonaje4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 JBpersonaje4MouseClicked(evt);
             }
         });
+        getContentPane().add(JBpersonaje4, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 150, -1, 140));
 
         JLfondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imágenes/fondo_equipos.jpg"))); // NOI18N
         JLfondo.setText("jLabel1");
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(280, 280, 280)
-                .addComponent(jLtitulo))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(50, 50, 50)
-                .addComponent(JBpersonaje1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(460, 460, 460)
-                .addComponent(JBpersonaje3))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(670, 670, 670)
-                .addComponent(JBpersonaje4))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(250, 250, 250)
-                .addComponent(JBpersonaje2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addComponent(JLfondo, javax.swing.GroupLayout.PREFERRED_SIZE, 870, javax.swing.GroupLayout.PREFERRED_SIZE)
-        );
-
-        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {JBpersonaje1, JBpersonaje2, JBpersonaje3, JBpersonaje4});
-
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(20, 20, 20)
-                .addComponent(jLtitulo)
-                .addGap(99, 99, 99)
-                .addComponent(JBpersonaje1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(150, 150, 150)
-                .addComponent(JBpersonaje3))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(150, 150, 150)
-                .addComponent(JBpersonaje4))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(150, 150, 150)
-                .addComponent(JBpersonaje2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addComponent(JLfondo, javax.swing.GroupLayout.PREFERRED_SIZE, 470, javax.swing.GroupLayout.PREFERRED_SIZE)
-        );
-
-        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {JBpersonaje1, JBpersonaje2, JBpersonaje3, JBpersonaje4});
+        getContentPane().add(JLfondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 870, 470));
 
         pack();
         setLocationRelativeTo(null);
