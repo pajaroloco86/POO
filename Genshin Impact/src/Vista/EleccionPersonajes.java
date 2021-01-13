@@ -27,20 +27,97 @@ public class EleccionPersonajes extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        btPer1 = new java.awt.Button();
+        btPer2 = new java.awt.Button();
+        btPer3 = new java.awt.Button();
+        btPer4 = new java.awt.Button();
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(870, 480));
+        setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imágenes/screen-5.jpg"))); // NOI18N
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-8, -3, 880, 470));
+        btPer1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btPer1.setLabel("button1");
+        btPer1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btPer1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btPer1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 110, -1, -1));
 
+        btPer2.setLabel("button2");
+        btPer2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btPer2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btPer2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 110, -1, -1));
+
+        btPer3.setLabel("button3");
+        btPer3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btPer3ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btPer3, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 110, -1, -1));
+
+        btPer4.setLabel("button4");
+        btPer4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btPer4ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btPer4, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 120, -1, -1));
+
+        jLabel2.setFont(new java.awt.Font("Sitka Text", 1, 24)); // NOI18N
+        jLabel2.setText("Elección personajes y armas");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 20, -1, -1));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imágenes/fondo_equipos.jpg"))); // NOI18N
         jLabel1.setText("jLabel1");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 30, -1, -1));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 870, 470));
+
+        jLabel3.setText("jLabel3");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 10, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btPer1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btPer1ActionPerformed
+        // TODO add your handling code here:
+        
+        
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(() -> {
+            new ListaPersonajes().setVisible(true);
+        });
+        
+    }//GEN-LAST:event_btPer1ActionPerformed
+
+    private void btPer4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btPer4ActionPerformed
+        // TODO add your handling code here:
+        java.awt.EventQueue.invokeLater(() -> {
+            new ListaPersonajes().setVisible(true);
+        });
+    }//GEN-LAST:event_btPer4ActionPerformed
+
+    private void btPer3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btPer3ActionPerformed
+        // TODO add your handling code here:
+        java.awt.EventQueue.invokeLater(() -> {
+            new ListaPersonajes().setVisible(true);
+        });
+    }//GEN-LAST:event_btPer3ActionPerformed
+
+    private void btPer2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btPer2ActionPerformed
+        // TODO add your handling code here:
+        java.awt.EventQueue.invokeLater(() -> {
+            new ListaPersonajes().setVisible(true);
+        });
+    }//GEN-LAST:event_btPer2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -48,7 +125,12 @@ public class EleccionPersonajes extends javax.swing.JFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private java.awt.Button btPer1;
+    private java.awt.Button btPer2;
+    private java.awt.Button btPer3;
+    private java.awt.Button btPer4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     // End of variables declaration//GEN-END:variables
 }
