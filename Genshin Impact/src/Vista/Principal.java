@@ -31,23 +31,28 @@ public class Principal extends javax.swing.JFrame {
 
         jLabel1 = new javax.swing.JLabel();
         jlabel2 = new javax.swing.JLabel();
-        btSiguiente1 = new javax.swing.JToggleButton();
         jLabel4 = new javax.swing.JLabel();
+        btSiguiente1 = new javax.swing.JToggleButton();
         jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jlabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Blackadder ITC", 1, 60)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Bienvenido");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 20, -1, -1));
 
         jlabel2.setFont(new java.awt.Font("Sitka Text", 3, 24)); // NOI18N
+        jlabel2.setForeground(new java.awt.Color(0, 0, 0));
         jlabel2.setText("a consejería de resina");
         getContentPane().add(jlabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 110, 430, 70));
+
+        jLabel4.setFont(new java.awt.Font("Sitka Text", 1, 24)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel4.setText("automática");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 160, -1, 50));
 
         btSiguiente1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         btSiguiente1.setText("Siguiente");
@@ -58,20 +63,8 @@ public class Principal extends javax.swing.JFrame {
         });
         getContentPane().add(btSiguiente1, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 370, 100, 50));
 
-        jLabel4.setFont(new java.awt.Font("Sitka Text", 1, 24)); // NOI18N
-        jLabel4.setText("automática");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 160, -1, 50));
-
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imágenes/genshin.jpg"))); // NOI18N
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 870, 480));
-
-        jLabel3.setFont(new java.awt.Font("Blackadder ITC", 1, 60)); // NOI18N
-        jLabel3.setText("Bienvenido");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 20, -1, -1));
-
-        jlabel3.setFont(new java.awt.Font("Sitka Text", 3, 24)); // NOI18N
-        jlabel3.setText("a calculadora de resina");
-        getContentPane().add(jlabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 110, 430, 70));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -127,9 +120,7 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JToggleButton btSiguiente1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jlabel2;
-    private javax.swing.JLabel jlabel3;
     // End of variables declaration//GEN-END:variables
 }
