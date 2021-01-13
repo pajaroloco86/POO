@@ -27,172 +27,103 @@ public class ListaPersonajes extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        btElec1 = new java.awt.Button();
-        btEle2 = new java.awt.Button();
-        btEle3 = new java.awt.Button();
-        btEle4 = new java.awt.Button();
-        btEle5 = new java.awt.Button();
-        btEle6 = new java.awt.Button();
-        btEle7 = new java.awt.Button();
-        btEle8 = new java.awt.Button();
-        btEle9 = new java.awt.Button();
-        btEle10 = new java.awt.Button();
-        btEle11 = new java.awt.Button();
-        btEle12 = new java.awt.Button();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
+        jButton7 = new javax.swing.JButton();
+        jButton8 = new javax.swing.JButton();
+        jButton9 = new javax.swing.JButton();
+        jButton10 = new javax.swing.JButton();
+        jButton11 = new javax.swing.JButton();
+        jButton12 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btElec1.setLabel("button1");
-        btElec1.addActionListener(new java.awt.event.ActionListener() {
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imágenes/Avatares/Barbara-Icon.png"))); // NOI18N
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btElec1ActionPerformed(evt);
+                jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(btElec1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 80, -1, -1));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, 130, 130));
 
-        btEle2.setLabel("button1");
-        btEle2.addActionListener(new java.awt.event.ActionListener() {
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imágenes/Avatares/Beidou-Icon.png"))); // NOI18N
+        jButton2.setMinimumSize(new java.awt.Dimension(161, 137));
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btEle2ActionPerformed(evt);
+                jButton2ActionPerformed(evt);
             }
         });
-        getContentPane().add(btEle2, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 80, -1, -1));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 40, 130, 130));
 
-        btEle3.setLabel("button1");
-        btEle3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btEle3ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btEle3, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 70, -1, -1));
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imágenes/Avatares/Chongyun-Icon.png"))); // NOI18N
+        jButton3.setMinimumSize(new java.awt.Dimension(161, 137));
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 40, 130, 130));
 
-        btEle4.setLabel("button1");
-        btEle4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btEle4ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btEle4, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 80, -1, -1));
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imágenes/Avatares/Diluc-Icon.png"))); // NOI18N
+        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 40, 130, 130));
 
-        btEle5.setLabel("button1");
-        btEle5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btEle5ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btEle5, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 190, -1, -1));
+        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imágenes/Avatares/Sucrose-Icon.png"))); // NOI18N
+        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 40, 130, 130));
 
-        btEle6.setLabel("button1");
-        btEle6.addActionListener(new java.awt.event.ActionListener() {
+        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imágenes/Avatares/Fischl-Icon.png"))); // NOI18N
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btEle6ActionPerformed(evt);
+                jButton6ActionPerformed(evt);
             }
         });
-        getContentPane().add(btEle6, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 190, -1, -1));
+        getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 40, 130, 130));
 
-        btEle7.setLabel("button1");
-        btEle7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btEle7ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btEle7, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 190, -1, -1));
+        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imágenes/Avatares/Keqing-Icon.png"))); // NOI18N
+        getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 200, 130, 130));
 
-        btEle8.setLabel("button1");
-        btEle8.addActionListener(new java.awt.event.ActionListener() {
+        jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imágenes/Avatares/Mona-Icon.png"))); // NOI18N
+        jButton8.setPreferredSize(new java.awt.Dimension(161, 137));
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btEle8ActionPerformed(evt);
+                jButton8ActionPerformed(evt);
             }
         });
-        getContentPane().add(btEle8, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 180, -1, -1));
+        getContentPane().add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 200, 130, 130));
 
-        btEle9.setLabel("button1");
-        btEle9.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btEle9ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btEle9, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 310, -1, -1));
+        jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imágenes/Avatares/Qiqi-Icon.png"))); // NOI18N
+        getContentPane().add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 200, 130, 130));
 
-        btEle10.setLabel("button1");
-        btEle10.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btEle10ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btEle10, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 310, -1, -1));
+        jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imágenes/Avatares/Venti-Icon.png"))); // NOI18N
+        getContentPane().add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 200, 130, 130));
 
-        btEle11.setLabel("button1");
-        btEle11.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btEle11ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btEle11, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 310, -1, -1));
+        jButton11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imágenes/Avatares/Xiangling-Icon.png"))); // NOI18N
+        getContentPane().add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 200, 130, 130));
 
-        btEle12.setLabel("button1");
-        btEle12.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btEle12ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btEle12, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 320, -1, -1));
+        jButton12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imágenes/Avatares/Zhongli-Icon.png"))); // NOI18N
+        getContentPane().add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 200, 130, 130));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imágenes/screen-5.jpg"))); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 430));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 970, 370));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btElec1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btElec1ActionPerformed
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btElec1ActionPerformed
+    }//GEN-LAST:event_jButton2ActionPerformed
 
-    private void btEle2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btEle2ActionPerformed
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btEle2ActionPerformed
+    }//GEN-LAST:event_jButton8ActionPerformed
 
-    private void btEle3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btEle3ActionPerformed
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btEle3ActionPerformed
+    }//GEN-LAST:event_jButton6ActionPerformed
 
-    private void btEle4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btEle4ActionPerformed
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btEle4ActionPerformed
-
-    private void btEle5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btEle5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btEle5ActionPerformed
-
-    private void btEle6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btEle6ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btEle6ActionPerformed
-
-    private void btEle7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btEle7ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btEle7ActionPerformed
-
-    private void btEle8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btEle8ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btEle8ActionPerformed
-
-    private void btEle9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btEle9ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btEle9ActionPerformed
-
-    private void btEle10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btEle10ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btEle10ActionPerformed
-
-    private void btEle11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btEle11ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btEle11ActionPerformed
-
-    private void btEle12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btEle12ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btEle12ActionPerformed
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -200,18 +131,18 @@ public class ListaPersonajes extends javax.swing.JFrame {
     
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private java.awt.Button btEle10;
-    private java.awt.Button btEle11;
-    private java.awt.Button btEle12;
-    private java.awt.Button btEle2;
-    private java.awt.Button btEle3;
-    private java.awt.Button btEle4;
-    private java.awt.Button btEle5;
-    private java.awt.Button btEle6;
-    private java.awt.Button btEle7;
-    private java.awt.Button btEle8;
-    private java.awt.Button btEle9;
-    private java.awt.Button btElec1;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton10;
+    private javax.swing.JButton jButton11;
+    private javax.swing.JButton jButton12;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
