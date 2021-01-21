@@ -8,12 +8,12 @@ package Clases;
 
 public class armas{
     private String nombreArma;
-    private String materialMejora;
+    private String DominioMaterialMejora;
 
     //Constructor
-    public armas(String nombreArma, String materialMejora) {
+    public armas(String nombreArma, String DominioMaterialMejora) {
         this.nombreArma = nombreArma;
-        this.materialMejora = materialMejora;
+        this.DominioMaterialMejora = DominioMaterialMejora;
     }
 
     //Constructor sin parametros, usado para crear objetos de tipo "Personaje"
@@ -29,13 +29,15 @@ public class armas{
         this.nombreArma = nombreArma;
     }
 
-    public String getMaterialMejora() {
-        return materialMejora;
+    public String getDominioMaterialMejora() {
+        return DominioMaterialMejora;
     }
 
-    public void setMaterialMejora(String materialMejora) {
-        this.materialMejora = materialMejora;
+    public void setDominioMaterialMejora(String DominioMaterialMejora) {
+        this.DominioMaterialMejora = DominioMaterialMejora;
     }
+
+    
     
     
 }

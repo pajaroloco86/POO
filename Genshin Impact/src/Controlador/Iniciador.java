@@ -9,10 +9,13 @@ package Controlador;
 import Clases.Personaje;
 import Clases.armas;
 import Vista.Principal;
+import java.util.ArrayList;
 
 public class Iniciador {
     //Vector donde se almacenan los datos    
     public static Personaje[] equipo = new Personaje[4];
+    public static ArrayList<String> nombreDominios = new ArrayList<String>();
+    public static ArrayList<Integer> aparicionesDominios = new ArrayList<Integer>();
 
     public static void main(String[] args) {               
         //Objeto que sirve como default para el arreglo
