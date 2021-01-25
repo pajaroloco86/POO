@@ -106,39 +106,37 @@ public class ListaPersonajes extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(962, 400));
         setMinimumSize(new java.awt.Dimension(962, 400));
-        setPreferredSize(new java.awt.Dimension(962, 400));
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        JBBarbara.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imágenes/Avatares/Barbara-Icon.png"))); // NOI18N
+        JBBarbara.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Avatares/Barbara.png"))); // NOI18N
         JBBarbara.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 JBBarbaraMouseClicked(evt);
             }
         });
-        getContentPane().add(JBBarbara, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, 130, 130));
+        getContentPane().add(JBBarbara, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 40, 130, 130));
 
-        JBBeidou.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imágenes/Avatares/Beidou-Icon.png"))); // NOI18N
+        JBBeidou.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Avatares/Beidou.png"))); // NOI18N
         JBBeidou.setMinimumSize(new java.awt.Dimension(161, 137));
         JBBeidou.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 JBBeidouMouseClicked(evt);
             }
         });
-        getContentPane().add(JBBeidou, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 40, 130, 130));
+        getContentPane().add(JBBeidou, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 40, 130, 130));
 
-        JBChongyun.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imágenes/Avatares/Chongyun-Icon.png"))); // NOI18N
+        JBChongyun.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Avatares/Chongyun.png"))); // NOI18N
         JBChongyun.setMinimumSize(new java.awt.Dimension(161, 137));
         JBChongyun.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 JBChongyunMouseClicked(evt);
             }
         });
-        getContentPane().add(JBChongyun, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 40, 130, 130));
+        getContentPane().add(JBChongyun, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 40, 130, 130));
 
-        JBDiluc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imágenes/Avatares/Diluc-Icon.png"))); // NOI18N
+        JBDiluc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Avatares/Diluc.png"))); // NOI18N
         JBDiluc.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 JBDilucMouseClicked(evt);
@@ -146,72 +144,77 @@ public class ListaPersonajes extends javax.swing.JFrame {
         });
         getContentPane().add(JBDiluc, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 40, 130, 130));
 
-        JBSucrose.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imágenes/Avatares/Sucrose-Icon.png"))); // NOI18N
+        JBSucrose.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Avatares/Sucrose.png"))); // NOI18N
         JBSucrose.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 JBSucroseMouseClicked(evt);
             }
         });
-        getContentPane().add(JBSucrose, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 40, 130, 130));
+        getContentPane().add(JBSucrose, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 40, 130, 130));
 
-        JBFischl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imágenes/Avatares/Fischl-Icon.png"))); // NOI18N
+        JBFischl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Avatares/Fischl.png"))); // NOI18N
         JBFischl.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 JBFischlMouseClicked(evt);
             }
         });
-        getContentPane().add(JBFischl, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 40, 130, 130));
+        getContentPane().add(JBFischl, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 40, 130, 130));
 
-        JBKeqing.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imágenes/Avatares/Keqing-Icon.png"))); // NOI18N
+        JBKeqing.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Avatares/Keqing.png"))); // NOI18N
         JBKeqing.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 JBKeqingMouseClicked(evt);
             }
         });
-        getContentPane().add(JBKeqing, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 200, 130, 130));
+        getContentPane().add(JBKeqing, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 200, 130, 130));
 
-        JBMona.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imágenes/Avatares/Mona-Icon.png"))); // NOI18N
+        JBMona.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Avatares/Mona.png"))); // NOI18N
         JBMona.setPreferredSize(new java.awt.Dimension(161, 137));
         JBMona.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 JBMonaMouseClicked(evt);
             }
         });
-        getContentPane().add(JBMona, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 200, 130, 130));
+        getContentPane().add(JBMona, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 200, 130, 130));
 
-        JBQiqi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imágenes/Avatares/Qiqi-Icon.png"))); // NOI18N
+        JBQiqi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Avatares/Qiqi.png"))); // NOI18N
         JBQiqi.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 JBQiqiMouseClicked(evt);
             }
         });
-        getContentPane().add(JBQiqi, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 200, 130, 130));
+        getContentPane().add(JBQiqi, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 200, 130, 130));
 
-        JBVenti.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imágenes/Avatares/Venti-Icon.png"))); // NOI18N
+        JBVenti.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Avatares/Venti.png"))); // NOI18N
         JBVenti.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 JBVentiMouseClicked(evt);
             }
         });
+        JBVenti.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBVentiActionPerformed(evt);
+            }
+        });
         getContentPane().add(JBVenti, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 200, 130, 130));
 
-        JBXiangling.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imágenes/Avatares/Xiangling-Icon.png"))); // NOI18N
+        JBXiangling.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Avatares/Xiangling.png"))); // NOI18N
         JBXiangling.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 JBXianglingMouseClicked(evt);
             }
         });
-        getContentPane().add(JBXiangling, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 200, 130, 130));
+        getContentPane().add(JBXiangling, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 200, 130, 130));
 
-        JBZhongli.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imágenes/Avatares/Zhongli-Icon.png"))); // NOI18N
+        JBZhongli.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Avatares/Zhongli.png"))); // NOI18N
         JBZhongli.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 JBZhongliMouseClicked(evt);
             }
         });
-        getContentPane().add(JBZhongli, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 200, 130, 130));
+        getContentPane().add(JBZhongli, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 200, 130, 130));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imágenes/screen-5.jpg"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fondoListaPersonajes.jpg"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 970, 370));
 
         pack();
@@ -220,70 +223,70 @@ public class ListaPersonajes extends javax.swing.JFrame {
 
     private void JBBarbaraMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JBBarbaraMouseClicked
         // TODO add your handling code here:
-        Iniciador.equipo[posicionPersonaje] = new Personaje("Barbara", new armas(),"Guia de la libertad");
+        Iniciador.equipo[posicionPersonaje] = new Personaje("Barbara", new armas("Catalizador"),"Guia de la libertad");
         FRMEleccionPersonajes.repaint();
         this.dispose();
     }//GEN-LAST:event_JBBarbaraMouseClicked
 
     private void JBBeidouMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JBBeidouMouseClicked
         // TODO add your handling code here:
-        Iniciador.equipo[posicionPersonaje] = new Personaje("Beidou", new armas(),"Guia del oro");
+        Iniciador.equipo[posicionPersonaje] = new Personaje("Beidou", new armas("Claymore"),"Guia del oro");
         FRMEleccionPersonajes.repaint();
         this.dispose();
     }//GEN-LAST:event_JBBeidouMouseClicked
 
     private void JBChongyunMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JBChongyunMouseClicked
         // TODO add your handling code here:
-        Iniciador.equipo[posicionPersonaje] = new Personaje("Chongyun", new armas(),"Guia de la diligencia");
+        Iniciador.equipo[posicionPersonaje] = new Personaje("Chongyun", new armas("Claymore"),"Guia de la diligencia");
         FRMEleccionPersonajes.repaint();
         this.dispose();
     }//GEN-LAST:event_JBChongyunMouseClicked
 
     private void JBDilucMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JBDilucMouseClicked
         // TODO add your handling code here:
-        Iniciador.equipo[posicionPersonaje] = new Personaje("Diluc", new armas(),"Guia de la resistencia");
+        Iniciador.equipo[posicionPersonaje] = new Personaje("Diluc", new armas("Claymore"),"Guia de la resistencia");
         FRMEleccionPersonajes.repaint();
         this.dispose();
     }//GEN-LAST:event_JBDilucMouseClicked
 
     private void JBSucroseMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JBSucroseMouseClicked
         // TODO add your handling code here:
-        Iniciador.equipo[posicionPersonaje] = new Personaje("Sucrose", new armas(),"Guia de la libertad");
+        Iniciador.equipo[posicionPersonaje] = new Personaje("Sucrose", new armas("Catalizador"),"Guia de la libertad");
         FRMEleccionPersonajes.repaint();
         this.dispose();
     }//GEN-LAST:event_JBSucroseMouseClicked
 
     private void JBFischlMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JBFischlMouseClicked
         // TODO add your handling code here:
-        Iniciador.equipo[posicionPersonaje] = new Personaje("Fischl", new armas(),"Guia de la poesia");
+        Iniciador.equipo[posicionPersonaje] = new Personaje("Fischl", new armas("Arco"),"Guia de la poesia");
         FRMEleccionPersonajes.repaint();
         this.dispose();
     }//GEN-LAST:event_JBFischlMouseClicked
 
     private void JBKeqingMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JBKeqingMouseClicked
         // TODO add your handling code here:
-        Iniciador.equipo[posicionPersonaje] = new Personaje("Keqing", new armas(),"Guia de la prosperidad");
+        Iniciador.equipo[posicionPersonaje] = new Personaje("Keqing", new armas("Ligera"),"Guia de la prosperidad");
         FRMEleccionPersonajes.repaint();
         this.dispose();
     }//GEN-LAST:event_JBKeqingMouseClicked
 
     private void JBMonaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JBMonaMouseClicked
         // TODO add your handling code here:
-        Iniciador.equipo[posicionPersonaje] = new Personaje("Mona", new armas(),"Guia de la resistencia");
+        Iniciador.equipo[posicionPersonaje] = new Personaje("Mona", new armas("Catalizador"),"Guia de la resistencia");
         FRMEleccionPersonajes.repaint();
         this.dispose();
     }//GEN-LAST:event_JBMonaMouseClicked
 
     private void JBQiqiMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JBQiqiMouseClicked
         // TODO add your handling code here:
-        Iniciador.equipo[posicionPersonaje] = new Personaje("Qiqi", new armas(),"Guia de la prosperidad");
+        Iniciador.equipo[posicionPersonaje] = new Personaje("Qiqi", new armas("Ligera"),"Guia de la prosperidad");
         FRMEleccionPersonajes.repaint();
         this.dispose();
     }//GEN-LAST:event_JBQiqiMouseClicked
 
     private void JBVentiMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JBVentiMouseClicked
         // TODO add your handling code here:
-        Iniciador.equipo[posicionPersonaje] = new Personaje("Venti", new armas(),"Guia de la poesia");
+        Iniciador.equipo[posicionPersonaje] = new Personaje("Venti", new armas("Arco"),"Guia de la poesia");
         FRMEleccionPersonajes.repaint();
         this.dispose();
     }//GEN-LAST:event_JBVentiMouseClicked
@@ -291,17 +294,21 @@ public class ListaPersonajes extends javax.swing.JFrame {
     private void JBXianglingMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JBXianglingMouseClicked
         // TODO add your handling code here:
         // TODO add your handling code here:
-        Iniciador.equipo[posicionPersonaje] = new Personaje("Xiangling", new armas(),"Guia de la diligencia");
+        Iniciador.equipo[posicionPersonaje] = new Personaje("Xiangling", new armas("Lanza"),"Guia de la diligencia");
         FRMEleccionPersonajes.repaint();
         this.dispose();
     }//GEN-LAST:event_JBXianglingMouseClicked
 
     private void JBZhongliMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JBZhongliMouseClicked
         // TODO add your handling code here:
-        Iniciador.equipo[posicionPersonaje] = new Personaje("Zhongli", new armas(),"Guia del oro");
+        Iniciador.equipo[posicionPersonaje] = new Personaje("Zhongli", new armas("Lanza"),"Guia del oro");
         FRMEleccionPersonajes.repaint();
         this.dispose();
     }//GEN-LAST:event_JBZhongliMouseClicked
+
+    private void JBVentiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBVentiActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_JBVentiActionPerformed
 
     /**
      * @param args the command line arguments

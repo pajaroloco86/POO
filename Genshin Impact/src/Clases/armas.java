@@ -9,14 +9,21 @@ package Clases;
 public class armas{
     private String nombreArma;
     private String materialMejora;
+    private String tipoArma;
 
     //Constructor
-    public armas(String nombreArma, String materialMejora) {
+    public armas(String nombreArma, String materialMejora, String tipoArma) {
         this.nombreArma = nombreArma;
         this.materialMejora = materialMejora;
+        this.tipoArma = tipoArma;
     }
-
-    //Constructor sin parametros, usado para crear objetos de tipo "Personaje"
+    
+    //Constructor que solo define el tipo de arma
+    public armas(String tipoArma){
+        this.tipoArma = tipoArma;
+    }
+    
+    //Constructor sin parametros, usado para el personaje "porDefecto
     public armas(){
     }
 
@@ -36,6 +43,15 @@ public class armas{
     public void setMaterialMejora(String materialMejora) {
         this.materialMejora = materialMejora;
     }
+
+    public String getTipoArma() {
+        return tipoArma;
+    }
+
+    public void setTipoArma(String tipoArma) {
+        this.tipoArma = tipoArma;
+    }
+    
     
     
 }

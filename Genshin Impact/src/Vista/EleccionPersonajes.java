@@ -5,6 +5,7 @@
  */
 package Vista;
 
+import Clases.ArmasModelo;
 import Clases.Personaje;
 import Controlador.Iniciador;
 import java.awt.image.BufferedImage;
@@ -26,11 +27,11 @@ public class EleccionPersonajes extends javax.swing.JFrame {
      */
     public EleccionPersonajes() {
         initComponents();
-        botonesTransparentes();
+        botonesConfiguracion();
     }
     
     //Metodo que pone todos los botones transparente
-    public void botonesTransparentes(){
+    public void botonesConfiguracion(){
     JBpersonaje1.setOpaque(false);
     JBpersonaje1.setContentAreaFilled(false);
     JBpersonaje1.setBorderPainted(false);
@@ -46,11 +47,16 @@ public class EleccionPersonajes extends javax.swing.JFrame {
     JBpersonaje4.setOpaque(false);
     JBpersonaje4.setContentAreaFilled(false);
     JBpersonaje4.setBorderPainted(false);
+    
+    JBsiguiente.setVisible(false);
+    
     }
     
     //Sobreescribimos el metodo repaint para que carge los avatares
     public void repaint(){
         cargaIconos();
+        cargaListaArmas();
+        estadoBotonSiguiente();
     }
     
     //Metodo que carga los iconos de los personajes de ser necesario
@@ -96,7 +102,50 @@ public class EleccionPersonajes extends javax.swing.JFrame {
 
     }
     
-
+    //Metodo que carga las armas en los ComboBox
+    public void cargaListaArmas(){
+        /**
+         * Revizamos que el personaje "porDefecto" no se encuentra en alguna 
+         * posicion dentro del arreglo "equipo", donde no se encuentre, cargamos
+         * el vector de armas en el respectivo ComboBox
+         */
+        if(!(Iniciador.equipo[0].getNombre().equals("Agregar"))){
+            ArmasModelo.inicializarListaArmas(JCBArma1, 0);
+        }
+        if(!(Iniciador.equipo[1].getNombre().equals("Agregar"))){
+            ArmasModelo.inicializarListaArmas(JCBArma2, 1);
+        }
+        if(!(Iniciador.equipo[2].getNombre().equals("Agregar"))){
+            ArmasModelo.inicializarListaArmas(JCBArma3, 2);
+        }
+        if(!(Iniciador.equipo[3].getNombre().equals("Agregar"))){
+            ArmasModelo.inicializarListaArmas(JCBArma4, 3);
+        }
+    }
+    
+    //Netodo que activa el boton de siguiente si ya se llenaron todos los campos
+    public void estadoBotonSiguiente(){
+        Boolean verificador=false;
+        
+        /**
+         * Mediante el personaje "porDefecto" podemos saber si ya se
+         * seleccionaron los 4 personajes que conforman el equipo
+         */
+        
+        for(int i=0; i<4;i++){
+            if(Iniciador.equipo[i].getNombre().equals("Agregar")){
+                /**
+                 * Si encuentra al personaje "porDefecto" se sale del ciclo
+                 * y no muestra el boton
+                 */
+                i=10;
+                verificador = false;
+            }else{
+                verificador = true;
+            }
+        }
+        JBsiguiente.setVisible(verificador);
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -109,9 +158,14 @@ public class EleccionPersonajes extends javax.swing.JFrame {
         jBPer2 = new javax.swing.JButton();
         jLtitulo = new javax.swing.JLabel();
         JBpersonaje1 = new javax.swing.JButton();
+        JCBArma1 = new javax.swing.JComboBox<>();
         JBpersonaje2 = new javax.swing.JButton();
+        JCBArma2 = new javax.swing.JComboBox<>();
         JBpersonaje3 = new javax.swing.JButton();
+        JCBArma3 = new javax.swing.JComboBox<>();
         JBpersonaje4 = new javax.swing.JButton();
+        JCBArma4 = new javax.swing.JComboBox<>();
+        JBsiguiente = new javax.swing.JToggleButton();
         JLfondo = new javax.swing.JLabel();
 
         jBPer2.addActionListener(new java.awt.event.ActionListener() {
@@ -127,7 +181,7 @@ public class EleccionPersonajes extends javax.swing.JFrame {
         jLtitulo.setFont(new java.awt.Font("Sitka Text", 1, 24)); // NOI18N
         jLtitulo.setForeground(new java.awt.Color(0, 0, 0));
         jLtitulo.setText("Elección personajes y armas");
-        getContentPane().add(jLtitulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 20, -1, -1));
+        getContentPane().add(jLtitulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 40, -1, -1));
 
         JBpersonaje1.setBackground(new java.awt.Color(0, 0, 0));
         JBpersonaje1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Avatares/Agregar.png"))); // NOI18N
@@ -139,7 +193,13 @@ public class EleccionPersonajes extends javax.swing.JFrame {
                 JBpersonaje1MouseClicked(evt);
             }
         });
-        getContentPane().add(JBpersonaje1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 150, -1, -1));
+        getContentPane().add(JBpersonaje1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 120, -1, -1));
+
+        JCBArma1.setLightWeightPopupEnabled(false);
+        JCBArma1.setMaximumSize(new java.awt.Dimension(140, 26));
+        JCBArma1.setMinimumSize(new java.awt.Dimension(140, 26));
+        JCBArma1.setPreferredSize(new java.awt.Dimension(140, 26));
+        getContentPane().add(JCBArma1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 290, -1, -1));
 
         JBpersonaje2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Avatares/Agregar.png"))); // NOI18N
         JBpersonaje2.setMaximumSize(new java.awt.Dimension(140, 140));
@@ -149,7 +209,13 @@ public class EleccionPersonajes extends javax.swing.JFrame {
                 JBpersonaje2MouseClicked(evt);
             }
         });
-        getContentPane().add(JBpersonaje2, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 150, -1, 140));
+        getContentPane().add(JBpersonaje2, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 120, -1, 140));
+
+        JCBArma2.setLightWeightPopupEnabled(false);
+        JCBArma2.setMaximumSize(new java.awt.Dimension(140, 26));
+        JCBArma2.setMinimumSize(new java.awt.Dimension(140, 26));
+        JCBArma2.setPreferredSize(new java.awt.Dimension(140, 26));
+        getContentPane().add(JCBArma2, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 290, -1, -1));
 
         JBpersonaje3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Avatares/Agregar.png"))); // NOI18N
         JBpersonaje3.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -157,7 +223,13 @@ public class EleccionPersonajes extends javax.swing.JFrame {
                 JBpersonaje3MouseClicked(evt);
             }
         });
-        getContentPane().add(JBpersonaje3, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 150, -1, 140));
+        getContentPane().add(JBpersonaje3, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 120, -1, 140));
+
+        JCBArma3.setLightWeightPopupEnabled(false);
+        JCBArma3.setMaximumSize(new java.awt.Dimension(140, 26));
+        JCBArma3.setMinimumSize(new java.awt.Dimension(140, 26));
+        JCBArma3.setPreferredSize(new java.awt.Dimension(140, 26));
+        getContentPane().add(JCBArma3, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 290, -1, -1));
 
         JBpersonaje4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Avatares/Agregar.png"))); // NOI18N
         JBpersonaje4.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -165,10 +237,26 @@ public class EleccionPersonajes extends javax.swing.JFrame {
                 JBpersonaje4MouseClicked(evt);
             }
         });
-        getContentPane().add(JBpersonaje4, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 150, -1, 140));
+        getContentPane().add(JBpersonaje4, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 120, -1, 140));
 
-        JLfondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imágenes/fondo_equipos.jpg"))); // NOI18N
+        JCBArma4.setLightWeightPopupEnabled(false);
+        JCBArma4.setMaximumSize(new java.awt.Dimension(140, 26));
+        JCBArma4.setMinimumSize(new java.awt.Dimension(140, 26));
+        JCBArma4.setPreferredSize(new java.awt.Dimension(140, 26));
+        getContentPane().add(JCBArma4, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 290, -1, -1));
+
+        JBsiguiente.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        JBsiguiente.setText("Siguiente");
+        JBsiguiente.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JBsiguienteMouseClicked(evt);
+            }
+        });
+        getContentPane().add(JBsiguiente, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 360, 100, 50));
+
+        JLfondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fondoEquipo.jpg"))); // NOI18N
         JLfondo.setText("jLabel1");
+        JLfondo.setMinimumSize(new java.awt.Dimension(870, 470));
         getContentPane().add(JLfondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 870, 470));
 
         pack();
@@ -202,6 +290,11 @@ public class EleccionPersonajes extends javax.swing.JFrame {
         FRMListaPersonajes.setVisible(true);
     }//GEN-LAST:event_JBpersonaje4MouseClicked
 
+    private void JBsiguienteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JBsiguienteMouseClicked
+        
+        this.dispose();
+    }//GEN-LAST:event_JBsiguienteMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -212,6 +305,11 @@ public class EleccionPersonajes extends javax.swing.JFrame {
     private javax.swing.JButton JBpersonaje2;
     private javax.swing.JButton JBpersonaje3;
     private javax.swing.JButton JBpersonaje4;
+    private javax.swing.JToggleButton JBsiguiente;
+    private javax.swing.JComboBox<String> JCBArma1;
+    private javax.swing.JComboBox<String> JCBArma2;
+    private javax.swing.JComboBox<String> JCBArma3;
+    private javax.swing.JComboBox<String> JCBArma4;
     private javax.swing.JLabel JLfondo;
     private javax.swing.JButton jBPer2;
     private javax.swing.JLabel jLtitulo;
