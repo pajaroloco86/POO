@@ -291,7 +291,7 @@ public class EleccionPersonajes extends javax.swing.JFrame {
     }//GEN-LAST:event_JBpersonaje4MouseClicked
 
     private void JBsiguienteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JBsiguienteMouseClicked
-        
+
         this.dispose();
     }//GEN-LAST:event_JBsiguienteMouseClicked
 

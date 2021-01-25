@@ -8,13 +8,13 @@ package Clases;
 
 public class armas{
     private String nombreArma;
-    private String materialMejora;
+    private String nombreDominioMejora;
     private String tipoArma;
 
     //Constructor
-    public armas(String nombreArma, String materialMejora, String tipoArma) {
+    public armas(String nombreArma, String nombreDominioMejora, String tipoArma) {
         this.nombreArma = nombreArma;
-        this.materialMejora = materialMejora;
+        this.nombreDominioMejora = nombreDominioMejora;
         this.tipoArma = tipoArma;
     }
     
@@ -36,12 +36,12 @@ public class armas{
         this.nombreArma = nombreArma;
     }
 
-    public String getMaterialMejora() {
-        return materialMejora;
+    public String getNombreDominioMejora() {
+        return nombreDominioMejora;
     }
 
-    public void setMaterialMejora(String materialMejora) {
-        this.materialMejora = materialMejora;
+    public void setNombreDominioMejora(String nombreDominioMejora) {
+        this.nombreDominioMejora = nombreDominioMejora;
     }
 
     public String getTipoArma() {

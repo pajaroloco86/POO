@@ -18,29 +18,10 @@ public class ArmasModelo {
         //Vector de armas a mostrar al usuario
         Vector<String> listaArmas = new Vector<String>();
         
-        switch(tipoArma){
-            case "Catalizador":
-                listaArmas.add("Prototipo Malicia");
-                listaArmas.add("Carta Náutica de las Tierras y los Mares");
-                break;
-            case "Claymore":
-                listaArmas.add("Espada del Tiempo");
-                listaArmas.add("Gran Espada de Sacrificio");
-                listaArmas.add("Prototipo Aminus");
-                break;
-            case "Arco":
-                listaArmas.add("Herrumbre");
-                listaArmas.add("Juramento del Arquero");
-                listaArmas.add("Arco de Favonius");
-                break;
-            case "Ligera":
-                listaArmas.add("Rugido del León");
-                listaArmas.add("Espada de Favonius");
-                break;
-            case "Lanza":    
-                listaArmas.add("Perdición del Dragón");
-                listaArmas.add("Púa Celestial");
-                break;
+        for(int i=0; i<Iniciador.armasListaCompleta.length; i++){
+            if(tipoArma.equals(Iniciador.armasListaCompleta[i].getTipoArma())){
+                listaArmas.add(Iniciador.armasListaCompleta[i].getNombreArma());
+            }
         }
         DefaultComboBoxModel modelo = new DefaultComboBoxModel(listaArmas);
         seleccionador.setModel(modelo);
