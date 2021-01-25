@@ -7,6 +7,7 @@ package Vista;
 
 import Clases.ArmasModelo;
 import Clases.Personaje;
+import Clases.armas;
 import Controlador.Iniciador;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
@@ -15,6 +16,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
+import javax.swing.JComboBox;
 
 /**
  *
@@ -123,7 +125,7 @@ public class EleccionPersonajes extends javax.swing.JFrame {
         }
     }
     
-    //Netodo que activa el boton de siguiente si ya se llenaron todos los campos
+    //Metodo que activa el boton de siguiente si ya se llenaron todos los campos
     public void estadoBotonSiguiente(){
         Boolean verificador=false;
         
@@ -146,6 +148,27 @@ public class EleccionPersonajes extends javax.swing.JFrame {
         }
         JBsiguiente.setVisible(verificador);
     }
+    
+    //Metodo para obtener el arma que el usuario selecciono
+    public armas obtenerArma(JComboBox seleccionador){
+        //Obtenemos el nombre del arma escogida
+        String nombreArma = seleccionador.getSelectedItem().toString();
+        armas armaEscogida = new armas();
+        
+        //Metodo que recorre el arreglo de todas las armas
+        for(int i=0; i<Iniciador.armasListaCompleta.length; i++){
+            if(nombreArma.equals(Iniciador.armasListaCompleta[i].getNombreArma())){
+                /**
+                 * Si los nombres coinciden, entonces tenemos el objeto a retornar
+                 * y podemos salir del ciclo
+                 */
+                armaEscogida = Iniciador.armasListaCompleta[i];
+                i=100;
+            }
+        }
+        return armaEscogida;
+    }
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -291,7 +314,13 @@ public class EleccionPersonajes extends javax.swing.JFrame {
     }//GEN-LAST:event_JBpersonaje4MouseClicked
 
     private void JBsiguienteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JBsiguienteMouseClicked
-
+        //Ponemos las armas seleccionadas a todos personajes
+        Iniciador.equipo[0].setArma(obtenerArma(JCBArma1));
+        Iniciador.equipo[1].setArma(obtenerArma(JCBArma2));
+        Iniciador.equipo[2].setArma(obtenerArma(JCBArma3));
+        Iniciador.equipo[3].setArma(obtenerArma(JCBArma4));
+        TablaConsejo FRMTabla = new TablaConsejo();
+        FRMTabla.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_JBsiguienteMouseClicked
 

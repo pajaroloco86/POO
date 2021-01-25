@@ -18,11 +18,14 @@ public class ArmasModelo {
         //Vector de armas a mostrar al usuario
         Vector<String> listaArmas = new Vector<String>();
         
+        //Ciclo que recorre todas las armas
         for(int i=0; i<Iniciador.armasListaCompleta.length; i++){
             if(tipoArma.equals(Iniciador.armasListaCompleta[i].getTipoArma())){
+                //Si el tipo de arma concuerda con la arma de la lista, se agrega al vector de armas
                 listaArmas.add(Iniciador.armasListaCompleta[i].getNombreArma());
             }
         }
+        //Se crea el modelo de armas y se le coloca al JComboBox
         DefaultComboBoxModel modelo = new DefaultComboBoxModel(listaArmas);
         seleccionador.setModel(modelo);
     }
