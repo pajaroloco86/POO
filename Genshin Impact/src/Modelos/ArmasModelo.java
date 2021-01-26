@@ -4,8 +4,9 @@
  * and open the template in the editor.
  */
 
-package Clases;
+package Modelos;
 
+import Controlador.Iniciador;
 import Controlador.Iniciador;
 import java.util.Vector;
 import javax.swing.DefaultComboBoxModel;

@@ -5,7 +5,8 @@
  */
 package Vista;
 
-import Clases.ArmasModelo;
+import Clases.Dominio;
+import Modelos.ArmasModelo;
 import Clases.Personaje;
 import Clases.armas;
 import Controlador.Iniciador;
@@ -169,6 +170,51 @@ public class EleccionPersonajes extends javax.swing.JFrame {
         return armaEscogida;
     }
     
+    public void inicializarArrayDominios(){
+        /**
+         * Como el arreglo aun no tiene elementos, agregamos los dominios del
+         * primer miembro del equipo
+         */
+        Iniciador.listaDominios.add(new Dominio(Iniciador.equipo[0].getNombreDominioTalentos(),1));
+        Iniciador.listaDominios.add(new Dominio(Iniciador.equipo[0].getArma().getNombreDominioMejora(),1));
+        
+        //Ciclo que recorre a los miembros faltantes del equipo 
+        for(int i=1; i<Iniciador.equipo.length; i++){
+            //Primero vemos los dominios de los talentos
+            //Ciclo que recorre a todos los miembros del arreglo
+            for(int j=0; j<Iniciador.listaDominios.size(); j++){
+                if(Iniciador.listaDominios.get(j).getNombre().contains(Iniciador.equipo[i].getNombreDominioTalentos())){
+                    //Si el nombre del dominio se encuentra dentro del arreglo, al contador se le agrega 1 
+                    Iniciador.listaDominios.get(j).setFrecuencia(Iniciador.listaDominios.get(j).getFrecuencia()+1);
+                    //Salimos del ciclo
+                    j=100;
+                }else if(j==(Iniciador.listaDominios.size()-1)){
+                    //Si ya comprobo que no se encuentra el nombre dentro del arreglo, se agrega
+                    Iniciador.listaDominios.add(new Dominio(Iniciador.equipo[i].getNombreDominioTalentos(),1));
+                    //FIX temporal
+                    j=100;
+                    //FIX temporal
+                }
+            }
+            //Hacmos lo mismo para los dominios de armas
+            //Ciclo que recorre a todos los miembros del arreglo
+            for(int k=0; k<Iniciador.listaDominios.size(); k++){
+                if(Iniciador.listaDominios.get(k).getNombre().contains(Iniciador.equipo[i].getArma().getNombreDominioMejora())){
+                    //Si el nombre del dominio se encuentra dentro del arreglo, al contador se le agrega 1 
+                    Iniciador.listaDominios.get(k).setFrecuencia(Iniciador.listaDominios.get(k).getFrecuencia()+1);
+                    //Salimos del ciclo
+                    k=100;
+                }else if(k==(Iniciador.listaDominios.size()-1)){
+                    //Si ya comprobo que no se encuentra el nombre dentro del arreglo, se agrega
+                    Iniciador.listaDominios.add(new Dominio(Iniciador.equipo[i].getArma().getNombreDominioMejora(),1));
+                    //FIX temporal
+                    k=100;
+                    //FIX temporal
+                }
+            }
+        }
+    }
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -319,6 +365,11 @@ public class EleccionPersonajes extends javax.swing.JFrame {
         Iniciador.equipo[1].setArma(obtenerArma(JCBArma2));
         Iniciador.equipo[2].setArma(obtenerArma(JCBArma3));
         Iniciador.equipo[3].setArma(obtenerArma(JCBArma4));
+        //Inicializamos el arreglo para la tabla de los dominios
+        inicializarArrayDominios();
+        
+        
+        //Inicializamos el frame de tabla
         TablaConsejo FRMTabla = new TablaConsejo();
         FRMTabla.setVisible(true);
         this.dispose();

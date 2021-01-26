@@ -6,15 +6,19 @@
 
 package Controlador;
 
+import Clases.Dominio;
 import Clases.Personaje;
 import Clases.armas;
 import Vista.Principal;
+import java.util.ArrayList;
 
 public class Iniciador {
     //Arreglo donde se almacenan los datos    
     public static Personaje[] equipo = new Personaje[4];
     //Arreglo completo de armas
     public static armas[] armasListaCompleta = new armas[12];
+    //Arregloq ue sirve para el calculo final de los dominios
+    public static ArrayList<Dominio> listaDominios = new ArrayList<Dominio>();
 
     public static void main(String[] args) {               
         //Iniciamos con valores por defecto el arreglo "equipo"

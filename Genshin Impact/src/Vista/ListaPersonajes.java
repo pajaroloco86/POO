@@ -223,70 +223,70 @@ public class ListaPersonajes extends javax.swing.JFrame {
 
     private void JBBarbaraMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JBBarbaraMouseClicked
         // TODO add your handling code here:
-        Iniciador.equipo[posicionPersonaje] = new Personaje("Barbara", new armas("Catalizador"),"Guia de la libertad");
+        Iniciador.equipo[posicionPersonaje] = new Personaje("Barbara", new armas("Catalizador"),"Altar de la escarcha");
         FRMEleccionPersonajes.repaint();
         this.dispose();
     }//GEN-LAST:event_JBBarbaraMouseClicked
 
     private void JBBeidouMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JBBeidouMouseClicked
         // TODO add your handling code here:
-        Iniciador.equipo[posicionPersonaje] = new Personaje("Beidou", new armas("Claymore"),"Guia del oro");
+        Iniciador.equipo[posicionPersonaje] = new Personaje("Beidou", new armas("Claymore"),"Aro de fuego");
         FRMEleccionPersonajes.repaint();
         this.dispose();
     }//GEN-LAST:event_JBBeidouMouseClicked
 
     private void JBChongyunMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JBChongyunMouseClicked
         // TODO add your handling code here:
-        Iniciador.equipo[posicionPersonaje] = new Personaje("Chongyun", new armas("Claymore"),"Guia de la diligencia");
+        Iniciador.equipo[posicionPersonaje] = new Personaje("Chongyun", new armas("Claymore"),"El corazón de las llamas");
         FRMEleccionPersonajes.repaint();
         this.dispose();
     }//GEN-LAST:event_JBChongyunMouseClicked
 
     private void JBDilucMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JBDilucMouseClicked
         // TODO add your handling code here:
-        Iniciador.equipo[posicionPersonaje] = new Personaje("Diluc", new armas("Claymore"),"Guia de la resistencia");
+        Iniciador.equipo[posicionPersonaje] = new Personaje("Diluc", new armas("Claymore"),"Abismo helado");
         FRMEleccionPersonajes.repaint();
         this.dispose();
     }//GEN-LAST:event_JBDilucMouseClicked
 
     private void JBSucroseMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JBSucroseMouseClicked
         // TODO add your handling code here:
-        Iniciador.equipo[posicionPersonaje] = new Personaje("Sucrose", new armas("Catalizador"),"Guia de la libertad");
+        Iniciador.equipo[posicionPersonaje] = new Personaje("Sucrose", new armas("Catalizador"),"Altar de la escarcha");
         FRMEleccionPersonajes.repaint();
         this.dispose();
     }//GEN-LAST:event_JBSucroseMouseClicked
 
     private void JBFischlMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JBFischlMouseClicked
         // TODO add your handling code here:
-        Iniciador.equipo[posicionPersonaje] = new Personaje("Fischl", new armas("Arco"),"Guia de la poesia");
+        Iniciador.equipo[posicionPersonaje] = new Personaje("Fischl", new armas("Arco"),"Reino del letargo");
         FRMEleccionPersonajes.repaint();
         this.dispose();
     }//GEN-LAST:event_JBFischlMouseClicked
 
     private void JBKeqingMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JBKeqingMouseClicked
         // TODO add your handling code here:
-        Iniciador.equipo[posicionPersonaje] = new Personaje("Keqing", new armas("Ligera"),"Guia de la prosperidad");
+        Iniciador.equipo[posicionPersonaje] = new Personaje("Keqing", new armas("Ligera"),"Altar de las llamas");
         FRMEleccionPersonajes.repaint();
         this.dispose();
     }//GEN-LAST:event_JBKeqingMouseClicked
 
     private void JBMonaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JBMonaMouseClicked
         // TODO add your handling code here:
-        Iniciador.equipo[posicionPersonaje] = new Personaje("Mona", new armas("Catalizador"),"Guia de la resistencia");
+        Iniciador.equipo[posicionPersonaje] = new Personaje("Mona", new armas("Catalizador"),"Abismo helado");
         FRMEleccionPersonajes.repaint();
         this.dispose();
     }//GEN-LAST:event_JBMonaMouseClicked
 
     private void JBQiqiMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JBQiqiMouseClicked
         // TODO add your handling code here:
-        Iniciador.equipo[posicionPersonaje] = new Personaje("Qiqi", new armas("Ligera"),"Guia de la prosperidad");
+        Iniciador.equipo[posicionPersonaje] = new Personaje("Qiqi", new armas("Ligera"),"Altar de las llamas");
         FRMEleccionPersonajes.repaint();
         this.dispose();
     }//GEN-LAST:event_JBQiqiMouseClicked
 
     private void JBVentiMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JBVentiMouseClicked
         // TODO add your handling code here:
-        Iniciador.equipo[posicionPersonaje] = new Personaje("Venti", new armas("Arco"),"Guia de la poesia");
+        Iniciador.equipo[posicionPersonaje] = new Personaje("Venti", new armas("Arco"),"Reino del letargo");
         FRMEleccionPersonajes.repaint();
         this.dispose();
     }//GEN-LAST:event_JBVentiMouseClicked
@@ -294,14 +294,14 @@ public class ListaPersonajes extends javax.swing.JFrame {
     private void JBXianglingMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JBXianglingMouseClicked
         // TODO add your handling code here:
         // TODO add your handling code here:
-        Iniciador.equipo[posicionPersonaje] = new Personaje("Xiangling", new armas("Lanza"),"Guia de la diligencia");
+        Iniciador.equipo[posicionPersonaje] = new Personaje("Xiangling", new armas("Lanza"),"El corazón de las llamas");
         FRMEleccionPersonajes.repaint();
         this.dispose();
     }//GEN-LAST:event_JBXianglingMouseClicked
 
     private void JBZhongliMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JBZhongliMouseClicked
         // TODO add your handling code here:
-        Iniciador.equipo[posicionPersonaje] = new Personaje("Zhongli", new armas("Lanza"),"Guia del oro");
+        Iniciador.equipo[posicionPersonaje] = new Personaje("Zhongli", new armas("Lanza"),"Aro de fuego");
         FRMEleccionPersonajes.repaint();
         this.dispose();
     }//GEN-LAST:event_JBZhongliMouseClicked
