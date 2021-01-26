@@ -3,13 +3,7 @@
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="2"/>
-    <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-      <Dimension value="[962, 400]"/>
-    </Property>
     <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-      <Dimension value="[962, 400]"/>
-    </Property>
-    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
       <Dimension value="[962, 400]"/>
     </Property>
     <Property name="resizable" type="boolean" value="false"/>
@@ -38,7 +32,7 @@
     <Component class="javax.swing.JButton" name="JBBarbara">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Im&#xe1;genes/Avatares/Barbara-Icon.png"/>
+          <Image iconType="3" name="/Imagenes/Avatares/Barbara.png"/>
         </Property>
       </Properties>
       <Events>
@@ -46,14 +40,14 @@
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="30" y="40" width="130" height="130"/>
+          <AbsoluteConstraints x="40" y="40" width="130" height="130"/>
         </Constraint>
       </Constraints>
     </Component>
     <Component class="javax.swing.JButton" name="JBBeidou">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Im&#xe1;genes/Avatares/Beidou-Icon.png"/>
+          <Image iconType="3" name="/Imagenes/Avatares/Beidou.png"/>
         </Property>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[161, 137]"/>
@@ -64,14 +58,14 @@
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="180" y="40" width="130" height="130"/>
+          <AbsoluteConstraints x="190" y="40" width="130" height="130"/>
         </Constraint>
       </Constraints>
     </Component>
     <Component class="javax.swing.JButton" name="JBChongyun">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Im&#xe1;genes/Avatares/Chongyun-Icon.png"/>
+          <Image iconType="3" name="/Imagenes/Avatares/Chongyun.png"/>
         </Property>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[161, 137]"/>
@@ -82,14 +76,14 @@
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="330" y="40" width="130" height="130"/>
+          <AbsoluteConstraints x="340" y="40" width="130" height="130"/>
         </Constraint>
       </Constraints>
     </Component>
     <Component class="javax.swing.JButton" name="JBDiluc">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Im&#xe1;genes/Avatares/Diluc-Icon.png"/>
+          <Image iconType="3" name="/Imagenes/Avatares/Diluc.png"/>
         </Property>
       </Properties>
       <Events>
@@ -104,7 +98,7 @@
     <Component class="javax.swing.JButton" name="JBSucrose">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Im&#xe1;genes/Avatares/Sucrose-Icon.png"/>
+          <Image iconType="3" name="/Imagenes/Avatares/Sucrose.png"/>
         </Property>
       </Properties>
       <Events>
@@ -112,14 +106,14 @@
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="650" y="40" width="130" height="130"/>
+          <AbsoluteConstraints x="640" y="40" width="130" height="130"/>
         </Constraint>
       </Constraints>
     </Component>
     <Component class="javax.swing.JButton" name="JBFischl">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Im&#xe1;genes/Avatares/Fischl-Icon.png"/>
+          <Image iconType="3" name="/Imagenes/Avatares/Fischl.png"/>
         </Property>
       </Properties>
       <Events>
@@ -127,14 +121,14 @@
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="800" y="40" width="130" height="130"/>
+          <AbsoluteConstraints x="790" y="40" width="130" height="130"/>
         </Constraint>
       </Constraints>
     </Component>
     <Component class="javax.swing.JButton" name="JBKeqing">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Im&#xe1;genes/Avatares/Keqing-Icon.png"/>
+          <Image iconType="3" name="/Imagenes/Avatares/Keqing.png"/>
         </Property>
       </Properties>
       <Events>
@@ -142,14 +136,14 @@
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="30" y="200" width="130" height="130"/>
+          <AbsoluteConstraints x="40" y="200" width="130" height="130"/>
         </Constraint>
       </Constraints>
     </Component>
     <Component class="javax.swing.JButton" name="JBMona">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Im&#xe1;genes/Avatares/Mona-Icon.png"/>
+          <Image iconType="3" name="/Imagenes/Avatares/Mona.png"/>
         </Property>
         <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[161, 137]"/>
@@ -160,14 +154,14 @@
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="180" y="200" width="130" height="130"/>
+          <AbsoluteConstraints x="190" y="200" width="130" height="130"/>
         </Constraint>
       </Constraints>
     </Component>
     <Component class="javax.swing.JButton" name="JBQiqi">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Im&#xe1;genes/Avatares/Qiqi-Icon.png"/>
+          <Image iconType="3" name="/Imagenes/Avatares/Qiqi.png"/>
         </Property>
       </Properties>
       <Events>
@@ -175,18 +169,19 @@
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="330" y="200" width="130" height="130"/>
+          <AbsoluteConstraints x="340" y="200" width="130" height="130"/>
         </Constraint>
       </Constraints>
     </Component>
     <Component class="javax.swing.JButton" name="JBVenti">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Im&#xe1;genes/Avatares/Venti-Icon.png"/>
+          <Image iconType="3" name="/Imagenes/Avatares/Venti.png"/>
         </Property>
       </Properties>
       <Events>
         <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="JBVentiMouseClicked"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="JBVentiActionPerformed"/>
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -197,7 +192,7 @@
     <Component class="javax.swing.JButton" name="JBXiangling">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Im&#xe1;genes/Avatares/Xiangling-Icon.png"/>
+          <Image iconType="3" name="/Imagenes/Avatares/Xiangling.png"/>
         </Property>
       </Properties>
       <Events>
@@ -205,14 +200,14 @@
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="650" y="200" width="130" height="130"/>
+          <AbsoluteConstraints x="640" y="200" width="130" height="130"/>
         </Constraint>
       </Constraints>
     </Component>
     <Component class="javax.swing.JButton" name="JBZhongli">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Im&#xe1;genes/Avatares/Zhongli-Icon.png"/>
+          <Image iconType="3" name="/Imagenes/Avatares/Zhongli.png"/>
         </Property>
       </Properties>
       <Events>
@@ -220,14 +215,14 @@
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="800" y="200" width="130" height="130"/>
+          <AbsoluteConstraints x="790" y="200" width="130" height="130"/>
         </Constraint>
       </Constraints>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Im&#xe1;genes/screen-5.jpg"/>
+          <Image iconType="3" name="/Imagenes/fondoListaPersonajes.jpg"/>
         </Property>
       </Properties>
       <Constraints>

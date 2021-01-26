@@ -9,13 +9,13 @@ package Clases;
 public class Personaje {
     private String nombre;
     private armas arma;
-    private String materialMejoraTalentos;
+    private String nombreDominioTalentos;
 
     //Constructor
-    public Personaje(String nombre, armas arma,String materialMejoraTalentos ) {
+    public Personaje(String nombre, armas arma,String nombreDominioTalentos ) {
         this.nombre = nombre;
         this.arma = arma;
-        this.materialMejoraTalentos = materialMejoraTalentos;
+        this.nombreDominioTalentos = nombreDominioTalentos;
     }
 
 //Metodos set y get
@@ -35,13 +35,15 @@ public class Personaje {
         this.arma = arma;
     }
 
-    public String getMaterialMejoraTalentos() {
-        return materialMejoraTalentos;
+    public String getNombreDominioTalentos() {
+        return nombreDominioTalentos;
     }
 
-    public void setMaterialMejoraTalentos(String materialMejoraTalentos) {
-        this.materialMejoraTalentos = materialMejoraTalentos;
+    public void setNombreDominioTalentos(String nombreDominioTalentos) {
+        this.nombreDominioTalentos = nombreDominioTalentos;
     }
+
+    
 
 
     
