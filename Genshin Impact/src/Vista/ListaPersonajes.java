@@ -5,17 +5,81 @@
  */
 package Vista;
 
+import Clases.Personaje;
+import Clases.armas;
+import Controlador.Iniciador;
+
 /**
  *
  * @author José Fernando Chan
  */
 public class ListaPersonajes extends javax.swing.JFrame {
 
-    /**
-     * Creates new form ListaPersonajes
-     */
-    public ListaPersonajes() {
+    
+    //Variable que sirve para saber en que posición se debe agregar al personaje
+    private int posicionPersonaje;
+    
+    //Variable para actualizar el frame de "EleccionPersonajes"
+    private EleccionPersonajes FRMEleccionPersonajes;
+    
+    
+    //Se modifico el codigo para que requiera como parametros la posicionPersonaje y FRMEleccionPersonajes
+    public ListaPersonajes(int posicionPersonaje, EleccionPersonajes FRMEleccionPersonajes) {
         initComponents();
+        botonesTransparentes();
+        this.posicionPersonaje = posicionPersonaje;
+        this.FRMEleccionPersonajes = FRMEleccionPersonajes;
+    }
+    
+    //Metodo para botones transparentes
+    public void botonesTransparentes(){
+    JBBarbara.setOpaque(false);
+    JBBarbara.setContentAreaFilled(false);
+    JBBarbara.setBorderPainted(false);
+    
+    JBBeidou.setOpaque(false);
+    JBBeidou.setContentAreaFilled(false);
+    JBBeidou.setBorderPainted(false);
+    
+    JBChongyun.setOpaque(false);
+    JBChongyun.setContentAreaFilled(false);
+    JBChongyun.setBorderPainted(false);
+    
+    JBDiluc.setOpaque(false);
+    JBDiluc.setContentAreaFilled(false);
+    JBDiluc.setBorderPainted(false);
+    
+    JBFischl.setOpaque(false);
+    JBFischl.setContentAreaFilled(false);
+    JBFischl.setBorderPainted(false);
+    
+    JBKeqing.setOpaque(false);
+    JBKeqing.setContentAreaFilled(false);
+    JBKeqing.setBorderPainted(false);
+    
+    JBMona.setOpaque(false);
+    JBMona.setContentAreaFilled(false);
+    JBMona.setBorderPainted(false);
+    
+    JBQiqi.setOpaque(false);
+    JBQiqi.setContentAreaFilled(false);
+    JBQiqi.setBorderPainted(false);
+    
+    JBSucrose.setOpaque(false);
+    JBSucrose.setContentAreaFilled(false);
+    JBSucrose.setBorderPainted(false);
+    
+    JBVenti.setOpaque(false);
+    JBVenti.setContentAreaFilled(false);
+    JBVenti.setBorderPainted(false);
+    
+    JBXiangling.setOpaque(false);
+    JBXiangling.setContentAreaFilled(false);
+    JBXiangling.setBorderPainted(false);
+    
+    JBZhongli.setOpaque(false);
+    JBZhongli.setContentAreaFilled(false);
+    JBZhongli.setBorderPainted(false);
     }
 
     /**
@@ -27,103 +91,224 @@ public class ListaPersonajes extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
-        jButton11 = new javax.swing.JButton();
-        jButton12 = new javax.swing.JButton();
+        JBBarbara = new javax.swing.JButton();
+        JBBeidou = new javax.swing.JButton();
+        JBChongyun = new javax.swing.JButton();
+        JBDiluc = new javax.swing.JButton();
+        JBSucrose = new javax.swing.JButton();
+        JBFischl = new javax.swing.JButton();
+        JBKeqing = new javax.swing.JButton();
+        JBMona = new javax.swing.JButton();
+        JBQiqi = new javax.swing.JButton();
+        JBVenti = new javax.swing.JButton();
+        JBXiangling = new javax.swing.JButton();
+        JBZhongli = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setMinimumSize(new java.awt.Dimension(962, 400));
+        setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imágenes/Avatares/Barbara-Icon.png"))); // NOI18N
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+        JBBarbara.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Avatares/Barbara.png"))); // NOI18N
+        JBBarbara.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JBBarbaraMouseClicked(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, 130, 130));
+        getContentPane().add(JBBarbara, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 40, 130, 130));
 
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imágenes/Avatares/Beidou-Icon.png"))); // NOI18N
-        jButton2.setMinimumSize(new java.awt.Dimension(161, 137));
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+        JBBeidou.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Avatares/Beidou.png"))); // NOI18N
+        JBBeidou.setMinimumSize(new java.awt.Dimension(161, 137));
+        JBBeidou.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JBBeidouMouseClicked(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 40, 130, 130));
+        getContentPane().add(JBBeidou, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 40, 130, 130));
 
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imágenes/Avatares/Chongyun-Icon.png"))); // NOI18N
-        jButton3.setMinimumSize(new java.awt.Dimension(161, 137));
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 40, 130, 130));
-
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imágenes/Avatares/Diluc-Icon.png"))); // NOI18N
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 40, 130, 130));
-
-        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imágenes/Avatares/Sucrose-Icon.png"))); // NOI18N
-        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 40, 130, 130));
-
-        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imágenes/Avatares/Fischl-Icon.png"))); // NOI18N
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
+        JBChongyun.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Avatares/Chongyun.png"))); // NOI18N
+        JBChongyun.setMinimumSize(new java.awt.Dimension(161, 137));
+        JBChongyun.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JBChongyunMouseClicked(evt);
             }
         });
-        getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 40, 130, 130));
+        getContentPane().add(JBChongyun, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 40, 130, 130));
 
-        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imágenes/Avatares/Keqing-Icon.png"))); // NOI18N
-        getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 200, 130, 130));
-
-        jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imágenes/Avatares/Mona-Icon.png"))); // NOI18N
-        jButton8.setPreferredSize(new java.awt.Dimension(161, 137));
-        jButton8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton8ActionPerformed(evt);
+        JBDiluc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Avatares/Diluc.png"))); // NOI18N
+        JBDiluc.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JBDilucMouseClicked(evt);
             }
         });
-        getContentPane().add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 200, 130, 130));
+        getContentPane().add(JBDiluc, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 40, 130, 130));
 
-        jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imágenes/Avatares/Qiqi-Icon.png"))); // NOI18N
-        getContentPane().add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 200, 130, 130));
+        JBSucrose.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Avatares/Sucrose.png"))); // NOI18N
+        JBSucrose.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JBSucroseMouseClicked(evt);
+            }
+        });
+        getContentPane().add(JBSucrose, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 40, 130, 130));
 
-        jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imágenes/Avatares/Venti-Icon.png"))); // NOI18N
-        getContentPane().add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 200, 130, 130));
+        JBFischl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Avatares/Fischl.png"))); // NOI18N
+        JBFischl.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JBFischlMouseClicked(evt);
+            }
+        });
+        getContentPane().add(JBFischl, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 40, 130, 130));
 
-        jButton11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imágenes/Avatares/Xiangling-Icon.png"))); // NOI18N
-        getContentPane().add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 200, 130, 130));
+        JBKeqing.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Avatares/Keqing.png"))); // NOI18N
+        JBKeqing.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JBKeqingMouseClicked(evt);
+            }
+        });
+        getContentPane().add(JBKeqing, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 200, 130, 130));
 
-        jButton12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imágenes/Avatares/Zhongli-Icon.png"))); // NOI18N
-        getContentPane().add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 200, 130, 130));
+        JBMona.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Avatares/Mona.png"))); // NOI18N
+        JBMona.setPreferredSize(new java.awt.Dimension(161, 137));
+        JBMona.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JBMonaMouseClicked(evt);
+            }
+        });
+        getContentPane().add(JBMona, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 200, 130, 130));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imágenes/screen-5.jpg"))); // NOI18N
+        JBQiqi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Avatares/Qiqi.png"))); // NOI18N
+        JBQiqi.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JBQiqiMouseClicked(evt);
+            }
+        });
+        getContentPane().add(JBQiqi, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 200, 130, 130));
+
+        JBVenti.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Avatares/Venti.png"))); // NOI18N
+        JBVenti.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JBVentiMouseClicked(evt);
+            }
+        });
+        JBVenti.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBVentiActionPerformed(evt);
+            }
+        });
+        getContentPane().add(JBVenti, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 200, 130, 130));
+
+        JBXiangling.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Avatares/Xiangling.png"))); // NOI18N
+        JBXiangling.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JBXianglingMouseClicked(evt);
+            }
+        });
+        getContentPane().add(JBXiangling, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 200, 130, 130));
+
+        JBZhongli.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Avatares/Zhongli.png"))); // NOI18N
+        JBZhongli.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JBZhongliMouseClicked(evt);
+            }
+        });
+        getContentPane().add(JBZhongli, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 200, 130, 130));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fondoListaPersonajes.jpg"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 970, 370));
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void JBBarbaraMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JBBarbaraMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+        Iniciador.equipo[posicionPersonaje] = new Personaje("Barbara", new armas("Catalizador"),"Altar de la escarcha");
+        FRMEleccionPersonajes.repaint();
+        this.dispose();
+    }//GEN-LAST:event_JBBarbaraMouseClicked
 
-    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+    private void JBBeidouMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JBBeidouMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton8ActionPerformed
+        Iniciador.equipo[posicionPersonaje] = new Personaje("Beidou", new armas("Claymore"),"Aro de fuego");
+        FRMEleccionPersonajes.repaint();
+        this.dispose();
+    }//GEN-LAST:event_JBBeidouMouseClicked
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+    private void JBChongyunMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JBChongyunMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton6ActionPerformed
+        Iniciador.equipo[posicionPersonaje] = new Personaje("Chongyun", new armas("Claymore"),"El corazón de las llamas");
+        FRMEleccionPersonajes.repaint();
+        this.dispose();
+    }//GEN-LAST:event_JBChongyunMouseClicked
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void JBDilucMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JBDilucMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+        Iniciador.equipo[posicionPersonaje] = new Personaje("Diluc", new armas("Claymore"),"Abismo helado");
+        FRMEleccionPersonajes.repaint();
+        this.dispose();
+    }//GEN-LAST:event_JBDilucMouseClicked
+
+    private void JBSucroseMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JBSucroseMouseClicked
+        // TODO add your handling code here:
+        Iniciador.equipo[posicionPersonaje] = new Personaje("Sucrose", new armas("Catalizador"),"Altar de la escarcha");
+        FRMEleccionPersonajes.repaint();
+        this.dispose();
+    }//GEN-LAST:event_JBSucroseMouseClicked
+
+    private void JBFischlMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JBFischlMouseClicked
+        // TODO add your handling code here:
+        Iniciador.equipo[posicionPersonaje] = new Personaje("Fischl", new armas("Arco"),"Reino del letargo");
+        FRMEleccionPersonajes.repaint();
+        this.dispose();
+    }//GEN-LAST:event_JBFischlMouseClicked
+
+    private void JBKeqingMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JBKeqingMouseClicked
+        // TODO add your handling code here:
+        Iniciador.equipo[posicionPersonaje] = new Personaje("Keqing", new armas("Ligera"),"Altar de las llamas");
+        FRMEleccionPersonajes.repaint();
+        this.dispose();
+    }//GEN-LAST:event_JBKeqingMouseClicked
+
+    private void JBMonaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JBMonaMouseClicked
+        // TODO add your handling code here:
+        Iniciador.equipo[posicionPersonaje] = new Personaje("Mona", new armas("Catalizador"),"Abismo helado");
+        FRMEleccionPersonajes.repaint();
+        this.dispose();
+    }//GEN-LAST:event_JBMonaMouseClicked
+
+    private void JBQiqiMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JBQiqiMouseClicked
+        // TODO add your handling code here:
+        Iniciador.equipo[posicionPersonaje] = new Personaje("Qiqi", new armas("Ligera"),"Altar de las llamas");
+        FRMEleccionPersonajes.repaint();
+        this.dispose();
+    }//GEN-LAST:event_JBQiqiMouseClicked
+
+    private void JBVentiMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JBVentiMouseClicked
+        // TODO add your handling code here:
+        Iniciador.equipo[posicionPersonaje] = new Personaje("Venti", new armas("Arco"),"Reino del letargo");
+        FRMEleccionPersonajes.repaint();
+        this.dispose();
+    }//GEN-LAST:event_JBVentiMouseClicked
+
+    private void JBXianglingMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JBXianglingMouseClicked
+        // TODO add your handling code here:
+        // TODO add your handling code here:
+        Iniciador.equipo[posicionPersonaje] = new Personaje("Xiangling", new armas("Lanza"),"El corazón de las llamas");
+        FRMEleccionPersonajes.repaint();
+        this.dispose();
+    }//GEN-LAST:event_JBXianglingMouseClicked
+
+    private void JBZhongliMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JBZhongliMouseClicked
+        // TODO add your handling code here:
+        Iniciador.equipo[posicionPersonaje] = new Personaje("Zhongli", new armas("Lanza"),"Aro de fuego");
+        FRMEleccionPersonajes.repaint();
+        this.dispose();
+    }//GEN-LAST:event_JBZhongliMouseClicked
+
+    private void JBVentiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBVentiActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_JBVentiActionPerformed
 
     /**
      * @param args the command line arguments
@@ -131,18 +316,18 @@ public class ListaPersonajes extends javax.swing.JFrame {
     
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton12;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
+    private javax.swing.JButton JBBarbara;
+    private javax.swing.JButton JBBeidou;
+    private javax.swing.JButton JBChongyun;
+    private javax.swing.JButton JBDiluc;
+    private javax.swing.JButton JBFischl;
+    private javax.swing.JButton JBKeqing;
+    private javax.swing.JButton JBMona;
+    private javax.swing.JButton JBQiqi;
+    private javax.swing.JButton JBSucrose;
+    private javax.swing.JButton JBVenti;
+    private javax.swing.JButton JBXiangling;
+    private javax.swing.JButton JBZhongli;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
