@@ -7,14 +7,11 @@ package Vista;
 
 import Clases.Dominio;
 import Modelos.ArmasModelo;
-import Clases.Personaje;
 import Clases.armas;
 import Controlador.Iniciador;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.net.URL;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JComboBox;
