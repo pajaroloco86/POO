@@ -10,11 +10,13 @@ public class Dominio implements Comparable<Dominio> {
     private String dias;
     private String nombre;
     private int frecuencia;
+    private String tipoDominio;
 
-    public Dominio(String nombre, int frecuencia) {
+    public Dominio(String nombre, int frecuencia,String tipoDominio) {
         setDias(nombre);
         this.nombre = nombre;
         this.frecuencia = frecuencia;
+        this.tipoDominio = tipoDominio;
     }
 
     public String getDias() {
@@ -32,6 +34,16 @@ public class Dominio implements Comparable<Dominio> {
     public void setFrecuencia(int frecuencia) {
         this.frecuencia = frecuencia;
     }
+
+    public String getTipoDominio() {
+        return tipoDominio;
+    }
+
+    public void setTipoDominio(String tipoDominio) {
+        this.tipoDominio = tipoDominio;
+    }
+    
+    
     
     //Metodo modificado que coloca el dia que aparece el dominio
     public void setDias(String nombre){

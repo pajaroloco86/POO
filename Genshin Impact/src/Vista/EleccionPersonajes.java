@@ -173,8 +173,8 @@ public class EleccionPersonajes extends javax.swing.JFrame {
          * Como el arreglo aun no tiene elementos, agregamos los dominios del
          * primer miembro del equipo
          */
-        Iniciador.listaDominios.add(new Dominio(Iniciador.equipo[0].getNombreDominioTalentos(),1));
-        Iniciador.listaDominios.add(new Dominio(Iniciador.equipo[0].getArma().getNombreDominioMejora(),1));
+        Iniciador.listaDominios.add(new Dominio(Iniciador.equipo[0].getNombreDominioTalentos(),1,"Talentos"));
+        Iniciador.listaDominios.add(new Dominio(Iniciador.equipo[0].getArma().getNombreDominioMejora(),1,"Arma"));
 
         //Ciclo que recorre a los miembros faltantes del equipo 
         for(int i=1; i<Iniciador.equipo.length; i++){
@@ -189,7 +189,7 @@ public class EleccionPersonajes extends javax.swing.JFrame {
                     j=100;
                 }else if(j==(Iniciador.listaDominios.size()-1)){
                     //Si ya comprobo que no se encuentra el nombre dentro del arreglo, se agrega
-                    Iniciador.listaDominios.add(new Dominio(Iniciador.equipo[i].getNombreDominioTalentos(),1));
+                    Iniciador.listaDominios.add(new Dominio(Iniciador.equipo[i].getNombreDominioTalentos(),1,"Talentos"));
                     //FIX temporal
                   
                 }
@@ -205,7 +205,7 @@ public class EleccionPersonajes extends javax.swing.JFrame {
                     k=100;
                 }else if(k==(Iniciador.listaDominios.size()-1)){
                     //Si ya comprobo que no se encuentra el nombre dentro del arreglo, se agrega
-                    Iniciador.listaDominios.add(new Dominio(Iniciador.equipo[i].getArma().getNombreDominioMejora(),1));
+                    Iniciador.listaDominios.add(new Dominio(Iniciador.equipo[i].getArma().getNombreDominioMejora(),1,"Arma"));
                     //FIX temporal
                     k=100;
                     //FIX temporal

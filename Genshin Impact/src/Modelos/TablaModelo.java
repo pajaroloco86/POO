@@ -23,6 +23,7 @@ public class TablaModelo {
         
         //Agregamos los titulos a la tabla
         titulos.add("Dias");
+        titulos.add("Tipo");
         titulos.add("Dominio");
         titulos.add("Frecuencia");
         
@@ -34,6 +35,7 @@ public class TablaModelo {
             //Vector para las filas
             Vector<Object> row = new Vector<Object>();
             row.add(Iniciador.listaDominios.get(i).getDias());
+            row.add(Iniciador.listaDominios.get(i).getTipoDominio());
             row.add(Iniciador.listaDominios.get(i).getNombre());
             row.add(Iniciador.listaDominios.get(i).getFrecuencia());
             data.add(row);
