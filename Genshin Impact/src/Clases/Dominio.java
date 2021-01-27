@@ -6,7 +6,7 @@
 
 package Clases;
 
-public class Dominio {
+public class Dominio implements Comparable<Dominio> {
     private String dias;
     private String nombre;
     private int frecuencia;
@@ -54,6 +54,17 @@ public class Dominio {
             this.dias = "Miercoles/sabado";
         }
         
+    }
+
+    @Override
+    public int compareTo(Dominio e) {
+         if(e.getFrecuencia()<frecuencia){
+            return -1;
+        }else if(e.getFrecuencia()==frecuencia){
+            return 0;
+        }else{
+            return 1;
+        }
     }
     
 }

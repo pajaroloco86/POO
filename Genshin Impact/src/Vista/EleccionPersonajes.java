@@ -18,6 +18,7 @@ import java.util.logging.Logger;
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JComboBox;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -177,12 +178,13 @@ public class EleccionPersonajes extends javax.swing.JFrame {
          */
         Iniciador.listaDominios.add(new Dominio(Iniciador.equipo[0].getNombreDominioTalentos(),1));
         Iniciador.listaDominios.add(new Dominio(Iniciador.equipo[0].getArma().getNombreDominioMejora(),1));
-        
+
         //Ciclo que recorre a los miembros faltantes del equipo 
         for(int i=1; i<Iniciador.equipo.length; i++){
             //Primero vemos los dominios de los talentos
             //Ciclo que recorre a todos los miembros del arreglo
-            for(int j=0; j<Iniciador.listaDominios.size(); j++){
+            int tamañoArray=Iniciador.listaDominios.size();
+            for(int j=0; j<tamañoArray; j++){
                 if(Iniciador.listaDominios.get(j).getNombre().contains(Iniciador.equipo[i].getNombreDominioTalentos())){
                     //Si el nombre del dominio se encuentra dentro del arreglo, al contador se le agrega 1 
                     Iniciador.listaDominios.get(j).setFrecuencia(Iniciador.listaDominios.get(j).getFrecuencia()+1);
@@ -192,13 +194,13 @@ public class EleccionPersonajes extends javax.swing.JFrame {
                     //Si ya comprobo que no se encuentra el nombre dentro del arreglo, se agrega
                     Iniciador.listaDominios.add(new Dominio(Iniciador.equipo[i].getNombreDominioTalentos(),1));
                     //FIX temporal
-                    j=100;
-                    //FIX temporal
+                  
                 }
             }
             //Hacmos lo mismo para los dominios de armas
             //Ciclo que recorre a todos los miembros del arreglo
-            for(int k=0; k<Iniciador.listaDominios.size(); k++){
+             tamañoArray=Iniciador.listaDominios.size();
+            for(int k=0; k<tamañoArray; k++){
                 if(Iniciador.listaDominios.get(k).getNombre().contains(Iniciador.equipo[i].getArma().getNombreDominioMejora())){
                     //Si el nombre del dominio se encuentra dentro del arreglo, al contador se le agrega 1 
                     Iniciador.listaDominios.get(k).setFrecuencia(Iniciador.listaDominios.get(k).getFrecuencia()+1);
@@ -215,6 +217,7 @@ public class EleccionPersonajes extends javax.swing.JFrame {
         }
     }
     
+   
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -225,6 +228,7 @@ public class EleccionPersonajes extends javax.swing.JFrame {
     private void initComponents() {
 
         jBPer2 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
         jLtitulo = new javax.swing.JLabel();
         JBpersonaje1 = new javax.swing.JButton();
         JCBArma1 = new javax.swing.JComboBox<>();
@@ -235,6 +239,7 @@ public class EleccionPersonajes extends javax.swing.JFrame {
         JBpersonaje4 = new javax.swing.JButton();
         JCBArma4 = new javax.swing.JComboBox<>();
         JBsiguiente = new javax.swing.JToggleButton();
+        jButton1 = new javax.swing.JButton();
         JLfondo = new javax.swing.JLabel();
 
         jBPer2.addActionListener(new java.awt.event.ActionListener() {
@@ -243,12 +248,13 @@ public class EleccionPersonajes extends javax.swing.JFrame {
             }
         });
 
+        jLabel1.setText("jLabel1");
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLtitulo.setFont(new java.awt.Font("Sitka Text", 1, 24)); // NOI18N
-        jLtitulo.setForeground(new java.awt.Color(0, 0, 0));
         jLtitulo.setText("Elección personajes y armas");
         getContentPane().add(jLtitulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 40, -1, -1));
 
@@ -323,6 +329,15 @@ public class EleccionPersonajes extends javax.swing.JFrame {
         });
         getContentPane().add(JBsiguiente, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 360, 100, 50));
 
+        jButton1.setBackground(new java.awt.Color(204, 204, 255));
+        jButton1.setText("Ayuda");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 30, -1, -1));
+
         JLfondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fondoEquipo.jpg"))); // NOI18N
         JLfondo.setText("jLabel1");
         JLfondo.setMinimumSize(new java.awt.Dimension(870, 470));
@@ -375,6 +390,12 @@ public class EleccionPersonajes extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_JBsiguienteMouseClicked
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        
+        JOptionPane.showMessageDialog(null,"Usted deberá elegir 4 personajes diferentes con una de sus armas para continuar");
+    }//GEN-LAST:event_jButton1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -392,6 +413,8 @@ public class EleccionPersonajes extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> JCBArma4;
     private javax.swing.JLabel JLfondo;
     private javax.swing.JButton jBPer2;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLtitulo;
     // End of variables declaration//GEN-END:variables
 }
