@@ -6,7 +6,9 @@
 
 package Modelos;
 
+import Clases.Dominio;
 import Controlador.Iniciador;
+import java.util.Collections;
 import java.util.Vector;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
@@ -24,6 +26,8 @@ public class TablaModelo {
         titulos.add("Dominio");
         titulos.add("Frecuencia");
         
+         Collections.sort(Iniciador.listaDominios);
+         
         //Ciclo que recorre todos los elementos del arreglo de dominios
         for(int i=0; i<Iniciador.listaDominios.size(); i++){
             //Vector para las filas

@@ -54,4 +54,21 @@ public class Iniciador {
         armasListaCompleta[10] = new armas("Arco de Favonius", "Ruinas de la ciudad sedienta", "Arco");
         armasListaCompleta[11] = new armas("Púa Celestial", "Ruinas de la ciudad sedienta", "Lanza");
     }
+    
+    public static boolean verificarNoRepeticion(Personaje x){
+        boolean z=true;
+        for(int i=0; i<equipo.length;i++){
+            
+            if(x.getNombre().equals(equipo[i].getNombre())){
+                z=false;
+            }
+        }
+        
+
+        
+        return z;
+    }
+    
+    
+    
 }
