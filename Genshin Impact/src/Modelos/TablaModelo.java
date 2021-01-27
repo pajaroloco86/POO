@@ -23,16 +23,19 @@ public class TablaModelo {
         
         //Agregamos los titulos a la tabla
         titulos.add("Dias");
+        titulos.add("Tipo");
         titulos.add("Dominio");
         titulos.add("Frecuencia");
         
-         Collections.sort(Iniciador.listaDominios);
+        //Ordenamos de mayor a menor los dominios segun la frecuencia
+        Collections.sort(Iniciador.listaDominios);
          
         //Ciclo que recorre todos los elementos del arreglo de dominios
         for(int i=0; i<Iniciador.listaDominios.size(); i++){
             //Vector para las filas
             Vector<Object> row = new Vector<Object>();
             row.add(Iniciador.listaDominios.get(i).getDias());
+            row.add(Iniciador.listaDominios.get(i).getTipoDominio());
             row.add(Iniciador.listaDominios.get(i).getNombre());
             row.add(Iniciador.listaDominios.get(i).getFrecuencia());
             data.add(row);

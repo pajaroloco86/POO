@@ -28,6 +28,8 @@ public class TablaConsejo extends javax.swing.JFrame {
     //Metodo que inicia la tabla (Demasiado complejo)
     public void iniciaTabla(){
         modelo.InicializaTabla(JTBConsejo);
+        //Los datos de la tabla no se pueden cambiar por el usuario
+        JTBConsejo.setEnabled(false);
     }
 
     /**
@@ -67,11 +69,13 @@ public class TablaConsejo extends javax.swing.JFrame {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
+        JTBConsejo.setRowSelectionAllowed(false);
         jScrollPane1.setViewportView(JTBConsejo);
 
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 130, 580, 130));
 
         jLabel2.setFont(new java.awt.Font("Bodoni MT", 3, 48)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Recomendaciones");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 40, -1, -1));
 
